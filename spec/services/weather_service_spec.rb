@@ -14,8 +14,8 @@ RSpec.describe WeatherService do
     expect(parsed_json[:timezone]).to be_a String
     expect(parsed_json[:timezone_offset]).to be_a Integer
     expect(parsed_json[:current]).to be_a Hash
-    expect(parsed_json[:minutely]).to be_a Hash
-    expect(parsed_json[:hourly]).to be_a Hash
-    expect(parsed_json[:daily]).to be_a Hash
+    expect(parsed_json[:minutely]).to be_a Array
+    expect(parsed_json[:hourly]).to be_a Array
+    expect(parsed_json[:daily]).to be_a Array
   end
 end
