@@ -1,65 +1,17 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/requests/api/v1/forecast_requests_spec.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/facades/forecast_facade_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          null,
+          1,
           1,
           null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
+          1,
+          1,
           null,
           null
         ]
@@ -341,7 +293,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null,
           null,
@@ -361,22 +313,6 @@
           null
         ]
       },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/controllers/api/v1/forecast_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/facades/forecast_facade.rb": {
         "lines": [
           1,
@@ -386,7 +322,6 @@
           1,
           1,
           1,
-          0,
           null,
           null,
           null
@@ -428,6 +363,6 @@
         ]
       }
     },
-    "timestamp": 1664060978
+    "timestamp": 1664061117
   }
 }
