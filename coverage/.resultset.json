@@ -1,31 +1,26 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/services/mapquest_service_spec.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/services/weather_service_spec.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
-          1,
+          0,
           null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -100,7 +95,7 @@
           1,
           1,
           1,
-          2,
+          1,
           1,
           1,
           null,
@@ -322,25 +317,8 @@
           null,
           null
         ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/services/mapquest_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1664045067
+    "timestamp": 1664048879
   }
 }
