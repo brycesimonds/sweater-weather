@@ -1,17 +1,65 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/facades/forecast_facade_spec.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/requests/api/v1/forecast_requests_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
+          null,
+          1,
+          null,
           1,
           1,
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          null,
+          null,
+          1,
+          1,
+          1,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          null,
           null,
           null
         ]
@@ -293,7 +341,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -310,6 +358,22 @@
           1,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -361,8 +425,61 @@
           null,
           null
         ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/serializers/forecast_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          8,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          48,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1664061117
+    "timestamp": 1664061221
   }
 }
