@@ -24,5 +24,7 @@
 
 #Ignores coverage results so not to be tracked by Git
 echo coverage >> .gitignore
+/coverage/.resultset.json
+/coverage/index.html
 # Ignore application configuration
 /config/application.yml
