@@ -21,3 +21,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+#Ignores coverage results so not to be tracked by Git
+echo coverage >> .gitignore
+# Ignore application configuration
+/config/application.yml
