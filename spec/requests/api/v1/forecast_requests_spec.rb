@@ -9,15 +9,15 @@ RSpec.describe 'Forecast data' do
     expect(response.status).to eq(200)
 
     forecast_data = JSON.parse(response.body, symbolize_names: true)[:data]
-
     expect(forecast_data).to have_key(:id)
     expect(forecast_data).to have_key(:type)
     expect(forecast_data).to have_key(:attributes)
-    expect(forecast_data).to have_key(:current_weather)
-    expect(forecast_data).to have_key(:daily_weather)
-    expect(forecast_data).to have_key(:hourly_weather)
-
-    current_weather = forecast_data[:current_weather]
+    expect(forecast_data[:attributes]).to have_key(:current_weather)
+    expect(forecast_data[:attributes]).to have_key(:daily_weather)
+    expect(forecast_data[:attributes]).to have_key(:hourly_weather)
+    expect(forecast_data).to_not include(:lat, :lon, :timezone, :timezone_offset)
+    
+    current_weather = forecast_data[:attributes][:current_weather]
     expect(current_weather).to be_a Hash
     expect(current_weather).to include(:datetime, :sunrise, :sunset, :temperature, :feels_like, :humidity, :uvi, :visibility, :conditions, :icon)
     expect(current_weather[:datetime]).to be_a String
@@ -25,28 +25,35 @@ RSpec.describe 'Forecast data' do
     expect(current_weather[:sunset]).to be_a String
     expect(current_weather[:temperature]).to be_a Float
     expect(current_weather[:feels_like]).to be_a Float
-    expect(current_weather[:humidity]).to be_a Integer || Float
-    expect(current_weather[:uvi]).to be_a Integer || Float
     expect(current_weather[:conditions]).to be_a String
     expect(current_weather[:icon]).to be_a String
+    expect(current_weather).to_not include(:pressure, :dew_point, :clouds, :wind_speed, :wind_deg)
+    
+    daily_weather = forecast_data[:attributes][:daily_weather]
+    expect(daily_weather).to be_a Array
+    daily_weather.map do |day_data|
+      expect(day_data).to be_a Hash
+      expect(day_data).to include(:date, :sunrise, :sunset, :max_temp, :min_temp, :conditions, :icon)
+      expect(day_data[:date]).to be_a String
+      expect(day_data[:sunrise]).to be_a String
+      expect(day_data[:sunset]).to be_a String
+      expect(day_data[:max_temp]).to be_a Float
+      expect(day_data[:min_temp]).to be_a Float
+      expect(day_data[:conditions]).to be_a String
+      expect(day_data[:icon]).to be_a String
+      expect(day_data).to_not include(:moonrise, :moonset, :moon_phase, :pressure, :dew_point, :wind_speed, :wind_deg, :wind_gust, :clouds, :pop)
+    end
 
-    daily_weather = forecast_data[:daily_weather]
-    expect(daily_weather).to be_a Hash
-    expect(daily_weather).to include(:date, :sunrise, :sunset, :max_temp, :min_temp, :conditons, :icon)
-    expect(daily_weather[:date]).to be_a String
-    expect(daily_weather[:sunrise]).to be_a String
-    expect(daily_weather[:sunset]).to be_a String
-    expect(daily_weather[:max_temp]).to be_a Float
-    expect(daily_weather[:min_temp]).to be_a Float
-    expect(daily_weather[:conditions]).to be_a String
-    expect(daily_weather[:icon]).to be_a String
-
-    hourly_weather = forecast_data[:hourly_weather]
-    expect(hourly_weather).to be_a Hash
-    expect(hourly_weather).to include(:time, :temperature, :conditons, :icon)
-    expect(hourly_weather[:time]).to be_a String
-    expect(hourly_weather[:temperature]).to be_a Float
-    expect(hourly_weather[:conditions]).to be_a String
-    expect(hourly_weather[:icon]).to be_a String
+    hourly_weather = forecast_data[:attributes][:hourly_weather]
+    expect(hourly_weather).to be_a Array
+    hourly_weather.map do |hour_data|
+      expect(hour_data).to be_a Hash
+      expect(hour_data).to include(:time, :temperature, :conditions, :icon)
+      expect(hour_data[:time]).to be_a String
+      expect(hour_data[:temperature]).to be_a Float
+      expect(hour_data[:conditions]).to be_a String
+      expect(hour_data[:icon]).to be_a String
+      expect(hour_data).to_not include(:pressure, :dew_point, :wind_speed, :wind_deg, :wind_gust, :clouds, :pop)
+    end
   end
 end
