@@ -10,7 +10,7 @@ RSpec.describe 'User data' do
     headers = {"CONTENT_TYPE" => "application/json"}
 
     post "/api/v1/users" , headers: headers, params: JSON.generate(user_params)
-
+    
     expect(response).to be_successful
     expect(response.status).to eq(201)
 
