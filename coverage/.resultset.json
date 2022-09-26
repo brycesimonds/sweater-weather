@@ -1,34 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/requests/api/v1/users_request_spec.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          null,
           null
         ]
       },
@@ -331,6 +311,6 @@
         ]
       }
     },
-    "timestamp": 1664222165
+    "timestamp": 1664223459
   }
 }

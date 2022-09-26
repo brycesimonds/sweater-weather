@@ -3,25 +3,25 @@ require 'rails_helper'
 RSpec.describe 'User data' do
   it "create: api call can create user in db and send 201 response with JSON and api_key", :vcr do 
     user_params = {
-      "email": "whatever@example.com",
-      "password": "password",
-      "password_confirmation": "password"
+      email: "whatever@example.com",
+      password: "password",
+      password_confirmation: "password"
     }
     headers = {"CONTENT_TYPE" => "application/json"}
 
-    post "/api/v1/users" , headers: headers, params: user_params 
+    post "/api/v1/users" , headers: headers, params: JSON.generate(user_params)
+
 
     expect(response).to be_successful
     expect(response.status).to eq(201)
 
-    user_data = JSON.parse(response.body, symbolize_names: true)[:data]
+    created_user = User.first
 
-    expect(user_data).to include(:type, :id, :attributes)
-    expect(user_data[:type]).to eq("users")
-    expect(user_data[:id]).to be_a String
-    expect(user_data[:attributes]).to be_a Hash
-    expect(user_data[:attributes]).to include(:email, :api_key)
-    expect(user_data[:attributes][:email]).to be_a String
-    expect(user_data[:attributes][:api_key]).to be_a String
+    expect(created_user.email).to eq(user_params[:email])
+    expect(created_user.email).to eq('whatever@example.com')
+    expect(created_user.password).to eq(user_params[:password])
+    expect(created_user.password).to eq('password')
+    expect(created_user.password_confirmation).to eq(user_params[:password_confirmation])
+    expect(created_user.password_confirmation).to eq('password')
   end
 end
