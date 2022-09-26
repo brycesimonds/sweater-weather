@@ -29,4 +29,18 @@ RSpec.describe 'Book Search data' do
     expect(book_search_data[:attributes][:books][0][:publisher]).to be_a Array
     expect(book_search_data[:attributes][:books][0][:publisher][0]).to be_a String
   end
+
+  it "if given negative quantity in params, returns the absolute value amount of books", :vcr do 
+
+    get "/api/v1/book-search?location=denver,co&quantity=-5"
+
+    expect(response).to be_successful
+    expect(response.status).to eq(200)
+
+    book_search_data = JSON.parse(response.body, symbolize_names: true)[:data]
+
+    expect(book_search_data[:attributes][:books]).to be_a Array
+    expect(book_search_data[:attributes][:books].count).to eq(5)
+
+  end
 end

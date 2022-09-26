@@ -1,7 +1,7 @@
 class BookSearchSerializer
   class << self
     def finalized_book_and_forecast_data(open_weather_api_data, book_api_data, quantity, location)
-      number_of_books_to_get = book_api_data[:docs][0...quantity.to_i]
+      number_of_books_to_get = book_api_data[:docs][0...quantity.to_i.abs]
       {
         "data": {
           "id": "null",
