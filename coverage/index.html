@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-26T13:51:34-06:00">2022-09-26T13:51:34-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-26T13:56:05-06:00">2022-09-26T13:56:05-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="yellow">
-  84.42%
+  85.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.84
+         0.85
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>77</b> relevant lines,
-    <span class="green"><b>65</b> lines covered</span> and
+    <b>80</b> relevant lines,
+    <span class="green"><b>68</b> lines covered</span> and
     <span class="red"><b>12</b> lines missed. </span>
     (<span class="yellow">
-  84.42%
+  85.0%
 </span>
 )
   </div>
@@ -194,9 +194,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#84d812c18bbcd057c67dba073150c5292b373c4e" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -215,12 +215,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#757a09a6c82bb65860f195fe0ecf701e149272d4" class="src_link" title="spec/requests/api/v1/users_request_spec.rb">spec/requests/api/v1/users_request_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">28.57 %</td>
-            <td class="cell--number">21</td>
-            <td class="cell--number">14</td>
-            <td class="cell--number">4</td>
+            <td class="red strong cell--number t-file__coverage">37.50 %</td>
+            <td class="cell--number">27</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">10</td>
-            <td class="cell--number">0.29</td>
+            <td class="cell--number">0.38</td>
             
           </tr>
         
@@ -2345,8 +2345,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2402,13 +2402,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">      resources :users, only: [:create]</code>
           </li>
         </div>
       
@@ -2419,12 +2419,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -3344,7 +3355,7 @@
     <h3>spec/requests/api/v1/users_request_spec.rb</h3>
     <h4>
       <span class="red">
-  28.57%
+  37.5%
 </span>
 
       lines covered
@@ -3353,8 +3364,8 @@
     
 
     <div class="t-line-summary">
-      <b>14</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>16</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>10</b> lines missed.</span>
     </div>
 
@@ -3416,7 +3427,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    user_params = {</code>
           </li>
         </div>
       
@@ -3427,7 +3438,7 @@
 
             
 
-            <code class="ruby">    post &quot;/api/v1/users&quot; </code>
+            <code class="ruby">      &quot;email&quot;: &quot;whatever@example.com&quot;,</code>
           </li>
         </div>
       
@@ -3438,56 +3449,45 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      &quot;password&quot;: &quot;password&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
             
 
-            <code class="ruby">    expect(response).to be_successful</code>
+            <code class="ruby">      &quot;password_confirmation&quot;: &quot;password&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
             
 
-            <code class="ruby">    expect(response.status).to eq(201)</code>
+            <code class="ruby">    }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    headers = {&quot;CONTENT_TYPE&quot; =&gt; &quot;application/json&quot;}</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby">    user_data = JSON.parse(response.body, symbolize_names: true)[:data]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -3498,13 +3498,24 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="13">
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    post &quot;/api/v1/users&quot; , headers: headers, params: user_params </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
             
 
-            <code class="ruby">    expect(user_data).to include(:type, :id, :attributes)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3515,7 +3526,7 @@
 
             
 
-            <code class="ruby">    expect(user_data[:type]).to eq(&quot;users&quot;)</code>
+            <code class="ruby">    expect(response).to be_successful</code>
           </li>
         </div>
       
@@ -3526,18 +3537,18 @@
 
             
 
-            <code class="ruby">    expect(user_data[:id]).to be_a String</code>
+            <code class="ruby">    expect(response.status).to eq(201)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
             
 
-            <code class="ruby">    expect(user_data[:attributes]).to be_a Hash</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3548,18 +3559,18 @@
 
             
 
-            <code class="ruby">    expect(user_data[:attributes]).to include(:email, :api_key)</code>
+            <code class="ruby">    user_data = JSON.parse(response.body, symbolize_names: true)[:data]</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
             
 
-            <code class="ruby">    expect(user_data[:attributes][:email]).to be_a String</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3570,12 +3581,78 @@
 
             
 
+            <code class="ruby">    expect(user_data).to include(:type, :id, :attributes)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    expect(user_data[:type]).to eq(&quot;users&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">    expect(user_data[:id]).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">    expect(user_data[:attributes]).to be_a Hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">    expect(user_data[:attributes]).to include(:email, :api_key)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">    expect(user_data[:attributes][:email]).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="25">
+            
+            
+
+            
+
             <code class="ruby">    expect(user_data[:attributes][:api_key]).to be_a String</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -3586,7 +3663,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="27">
             
             
 

@@ -2,8 +2,14 @@ require 'rails_helper'
 
 RSpec.describe 'User data' do
   it "create: api call can create user in db and send 201 response with JSON and api_key", :vcr do 
+    user_params = {
+      "email": "whatever@example.com",
+      "password": "password",
+      "password_confirmation": "password"
+    }
+    headers = {"CONTENT_TYPE" => "application/json"}
 
-    post "/api/v1/users" 
+    post "/api/v1/users" , headers: headers, params: user_params 
 
     expect(response).to be_successful
     expect(response.status).to eq(201)
