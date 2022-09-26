@@ -9,24 +9,24 @@ RSpec.describe 'Book Search data' do
     expect(response.status).to eq(200)
 
     book_search_data = JSON.parse(response.body, symbolize_names: true)[:data]
-    expect(book_search_data).to include(:id, :type, :attributes, :total_books_found, :books)
+    expect(book_search_data).to include(:id, :type, :attributes)
     expect(book_search_data[:type]).to eq("books")
 
-    expect(book_search_data[:attributes]).to include(:destination, :forecast)
+    expect(book_search_data[:attributes]).to include(:destination, :forecast, :total_books_found, :books)
     expect(book_search_data[:attributes][:destination]).to be_a String
     expect(book_search_data[:attributes][:forecast]).to be_a Hash
     expect(book_search_data[:attributes][:forecast]).to include(:summary, :temperature)
     expect(book_search_data[:attributes][:forecast][:summary]).to be_a String
     expect(book_search_data[:attributes][:forecast][:temperature]).to be_a String
 
-    expect(book_search_data[:total_books_found]).to be_a Integer
+    expect(book_search_data[:attributes][:total_books_found]).to be_a Integer
 
-    expect(book_search_data[:books]).to be_a Array
-    expect(book_search_data[:books][0]).to include(:isbn, :title, :publisher)
-    expect(book_search_data[:books][0][:isbn]).to be_a Array
-    expect(book_search_data[:books][0][:isbn][0]).to be_a String
-    expect(book_search_data[:books][0][:title]).to be_a String
-    expect(book_search_data[:books][0][:publisher]).to be_a Array
-    expect(book_search_data[:books][0][:publisher][0]).to be_a String
+    expect(book_search_data[:attributes][:books]).to be_a Array
+    expect(book_search_data[:attributes][:books][0]).to include(:isbn, :title, :publisher)
+    expect(book_search_data[:attributes][:books][0][:isbn]).to be_a Array
+    expect(book_search_data[:attributes][:books][0][:isbn][0]).to be_a String
+    expect(book_search_data[:attributes][:books][0][:title]).to be_a String
+    expect(book_search_data[:attributes][:books][0][:publisher]).to be_a Array
+    expect(book_search_data[:attributes][:books][0][:publisher][0]).to be_a String
   end
 end

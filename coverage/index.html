@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-26T10:07:02-06:00">2022-09-26T10:07:02-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-26T10:25:25-06:00">2022-09-26T10:25:25-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="yellow">
-  82.95%
+      <span class="green">
+  98.46%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.86
+       <span class="green">
+         1.05
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>129</b> relevant lines,
-    <span class="green"><b>107</b> lines covered</span> and
-    <span class="red"><b>22</b> lines missed. </span>
-    (<span class="yellow">
-  82.95%
+    <b>130</b> relevant lines,
+    <span class="green"><b>128</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed. </span>
+    (<span class="green">
+  98.46%
 </span>
 )
   </div>
@@ -105,12 +105,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#797625eadf558f60427ee6c107c4058a8faa8716" class="src_link" title="app/serializers/book_search_serializer.rb">app/serializers/book_search_serializer.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">80.00 %</td>
-            <td class="cell--number">31</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">0.80</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">28</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.67</td>
             
           </tr>
         
@@ -292,12 +292,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c76e834ff90312a25c87abacf401a3298a4e1922" class="src_link" title="spec/requests/api/v1/book_search_request_spec.rb">spec/requests/api/v1/book_search_request_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">17.39 %</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">32</td>
             <td class="cell--number">23</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">19</td>
-            <td class="cell--number">0.17</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -395,7 +395,7 @@
 
             
 
-            <code class="ruby">    render json: BookSearchSerializer.finalized_book_and_forecast_data(weather_api_data, book_api_data, params[:quantity])</code>
+            <code class="ruby">    render json: BookSearchSerializer.finalized_book_and_forecast_data(weather_api_data, book_api_data, params[:quantity], params[:location])</code>
           </li>
         </div>
       
@@ -624,8 +624,8 @@
   <div class="header">
     <h3>app/serializers/book_search_serializer.rb</h3>
     <h4>
-      <span class="red">
-  80.0%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -634,9 +634,9 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -675,7 +675,7 @@
 
             
 
-            <code class="ruby">    def finalized_book_and_forecast_data(open_weather_api_data, book_api_data, quantity)</code>
+            <code class="ruby">    def finalized_book_and_forecast_data(open_weather_api_data, book_api_data, quantity, location)</code>
           </li>
         </div>
       
@@ -686,7 +686,7 @@
 
             
 
-            <code class="ruby">      binding.pry</code>
+            <code class="ruby">      number_of_books_to_get = book_api_data[:docs][0...quantity.to_i]</code>
           </li>
         </div>
       
@@ -697,18 +697,18 @@
 
             
 
-            <code class="ruby">      number_of_books_to_get = book_api_data[:docs][0...quantity.to_i]</code>
+            <code class="ruby">      {</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="6">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      {</code>
+            
+
+            <code class="ruby">        &quot;data&quot;: {</code>
           </li>
         </div>
       
@@ -719,7 +719,7 @@
 
             
 
-            <code class="ruby">        &quot;data&quot;: {</code>
+            <code class="ruby">          &quot;id&quot;: &quot;null&quot;,</code>
           </li>
         </div>
       
@@ -730,7 +730,7 @@
 
             
 
-            <code class="ruby">          &quot;id&quot;: &quot;null&quot;,</code>
+            <code class="ruby">          &quot;type&quot;: &quot;books&quot;,</code>
           </li>
         </div>
       
@@ -741,7 +741,7 @@
 
             
 
-            <code class="ruby">          &quot;type&quot;: &quot;books&quot;,</code>
+            <code class="ruby">          &quot;attributes&quot;: {</code>
           </li>
         </div>
       
@@ -752,7 +752,7 @@
 
             
 
-            <code class="ruby">          &quot;attributes&quot;: {</code>
+            <code class="ruby">            &quot;destination&quot;: location,</code>
           </li>
         </div>
       
@@ -763,7 +763,7 @@
 
             
 
-            <code class="ruby">            &quot;destination&quot;: &quot;denver,co&quot;,</code>
+            <code class="ruby">            &quot;forecast&quot;: {</code>
           </li>
         </div>
       
@@ -774,7 +774,7 @@
 
             
 
-            <code class="ruby">            &quot;forecast&quot;: {</code>
+            <code class="ruby">              &quot;summary&quot;: open_weather_api_data[:current][:weather][0][:description],</code>
           </li>
         </div>
       
@@ -785,7 +785,7 @@
 
             
 
-            <code class="ruby">              &quot;summary&quot;: &quot;Cloudy with a chance of meatballs&quot;,</code>
+            <code class="ruby">              &quot;temperature&quot;: &quot;#{open_weather_api_data[:current][:temp]} F&quot;</code>
           </li>
         </div>
       
@@ -796,7 +796,7 @@
 
             
 
-            <code class="ruby">              &quot;temperature&quot;: &quot;83 F&quot;</code>
+            <code class="ruby">            },</code>
           </li>
         </div>
       
@@ -807,7 +807,7 @@
 
             
 
-            <code class="ruby">            },</code>
+            <code class="ruby">            &quot;total_books_found&quot;: book_api_data[:numFound],</code>
           </li>
         </div>
       
@@ -818,7 +818,7 @@
 
             
 
-            <code class="ruby">            &quot;total_books_found&quot;: 172,</code>
+            <code class="ruby">              &quot;books&quot;: number_of_books_to_get.map do |book|</code>
           </li>
         </div>
       
@@ -829,18 +829,18 @@
 
             
 
-            <code class="ruby">              {</code>
+            <code class="ruby">                {</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
+          <li class="covered" data-hits="5" data-linenumber="18">
+            <span class="hits">5</span>
             
 
-            <code class="ruby">              &quot;books&quot;: number_of_books_to_get.map do |book|</code>
+            
+
+            <code class="ruby">                  &quot;isbn&quot;: book[:isbn],</code>
           </li>
         </div>
       
@@ -851,7 +851,7 @@
 
             
 
-            <code class="ruby">                &quot;isbn&quot;: book[:isbn],</code>
+            <code class="ruby">                  &quot;title&quot;: book[:title],</code>
           </li>
         </div>
       
@@ -862,7 +862,7 @@
 
             
 
-            <code class="ruby">                &quot;title&quot;: book[:title],</code>
+            <code class="ruby">                  &quot;publisher&quot;: book[:publisher]</code>
           </li>
         </div>
       
@@ -873,7 +873,7 @@
 
             
 
-            <code class="ruby">                &quot;publisher&quot;: book[:publisher]</code>
+            <code class="ruby">                }</code>
           </li>
         </div>
       
@@ -884,7 +884,7 @@
 
             
 
-            <code class="ruby">              }</code>
+            <code class="ruby">            end</code>
           </li>
         </div>
       
@@ -895,7 +895,7 @@
 
             
 
-            <code class="ruby">            end</code>
+            <code class="ruby">          }</code>
           </li>
         </div>
       
@@ -906,7 +906,7 @@
 
             
 
-            <code class="ruby">          }</code>
+            <code class="ruby">        }</code>
           </li>
         </div>
       
@@ -917,7 +917,7 @@
 
             
 
-            <code class="ruby">        }</code>
+            <code class="ruby">      }</code>
           </li>
         </div>
       
@@ -928,7 +928,7 @@
 
             
 
-            <code class="ruby">      }</code>
+            <code class="ruby">    end </code>
           </li>
         </div>
       
@@ -939,45 +939,12 @@
 
             
 
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="28">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
-            <code class="ruby">    end </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="30">
-            
-            
-
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="never" data-hits="" data-linenumber="28">
             
             
 
@@ -4638,8 +4605,8 @@
   <div class="header">
     <h3>spec/requests/api/v1/book_search_request_spec.rb</h3>
     <h4>
-      <span class="red">
-  17.39%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -4649,8 +4616,8 @@
 
     <div class="t-line-summary">
       <b>23</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>19</b> lines missed.</span>
+      <span class="green"><b>23</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -4738,8 +4705,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="8">
-            
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
             
 
             
@@ -4749,8 +4716,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
-            
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
             
@@ -4771,8 +4738,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="11">
-            
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
             
 
             
@@ -4782,19 +4749,19 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="12">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data).to include(:id, :type, :attributes, :total_books_found, :books)</code>
+            
+
+            <code class="ruby">    expect(book_search_data).to include(:id, :type, :attributes)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="13">
-            
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
@@ -4815,19 +4782,19 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="15">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:attributes]).to include(:destination, :forecast)</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes]).to include(:destination, :forecast, :total_books_found, :books)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="16">
-            
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
             
 
             
@@ -4837,8 +4804,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="17">
-            
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
             
 
             
@@ -4848,8 +4815,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
-            
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
             
 
             
@@ -4859,8 +4826,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="19">
-            
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
             
 
             
@@ -4870,8 +4837,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="20">
-            
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
             
 
             
@@ -4892,13 +4859,13 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="22">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:total_books_found]).to be_a Integer</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:total_books_found]).to be_a Integer</code>
           </li>
         </div>
       
@@ -4914,79 +4881,79 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="24">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:books]).to be_a Array</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:books]).to be_a Array</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="25">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:books][0]).to include(:isbn, :title, :publisher)</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:books][0]).to include(:isbn, :title, :publisher)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="26">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:books][0][:isbn]).to be_a Array</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:books][0][:isbn]).to be_a Array</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="27">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:books][0][:isbn][0]).to be_a String</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:books][0][:isbn][0]).to be_a String</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="28">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:books][0][:title]).to be_a String</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:books][0][:title]).to be_a String</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="29">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:books][0][:publisher]).to be_a Array</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:books][0][:publisher]).to be_a Array</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="30">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    expect(book_search_data[:books][0][:publisher][0]).to be_a String</code>
+            
+
+            <code class="ruby">    expect(book_search_data[:attributes][:books][0][:publisher][0]).to be_a String</code>
           </li>
         </div>
       
