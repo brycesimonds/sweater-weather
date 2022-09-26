@@ -27,8 +27,8 @@ class ForecastSerializer
                 "date": "#{Time.at(day_data[:dt]).to_s.split(" ")[0]}",
                 "sunrise": "#{Time.at(day_data[:sunrise])}",
                 "sunset": "#{Time.at(day_data[:sunset])}",
-                "max_temp": day_data[:temp][:max],
-                "min_temp": day_data[:temp][:min],
+                "max_temp": day_data[:temp][:max].to_f,
+                "min_temp": day_data[:temp][:min].to_f,
                 "conditions": day_data[:weather][0][:description],
                 "icon": day_data[:weather][0][:icon],
               }
