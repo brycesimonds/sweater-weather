@@ -2,9 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'Session data' do
   it "create: api call can create a session with valid email and password login", :vcr do 
+    User.create!(email: 'whatever@example.com', password: 'cheese', api_key: "123")
     session_params = ({
       email: "whatever@example.com",
-      password: "password",
+      password: "cheese",
     })
     headers = {"CONTENT_TYPE" => "application/json"}
 
@@ -15,10 +16,9 @@ RSpec.describe 'Session data' do
 
     response_body = JSON.parse(response.body, symbolize_names: true)
     user = response_body[:data]
-
-    expect(user.email).to eq(user_params[:email])
-    expect(user.email).to eq('whatever@example.com')
-    expect(user.password).to eq(user_params[:password])
-    expect(user.password).to eq('password')
+  
+    expect(user[:attributes][:email]).to eq(session_params[:email])
+    expect(user[:attributes][:email]).to eq('whatever@example.com')
+    expect(user[:attributes][:api_key]).to eq(User.first.api_key)
   end
 end
