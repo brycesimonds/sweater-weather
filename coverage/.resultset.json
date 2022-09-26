@@ -1,28 +1,38 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/services/open_library_service_spec.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/spec/requests/api/v1/book_search_request_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
           null,
           1,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
           null,
-          1,
+          0,
+          0,
+          0,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -97,7 +107,7 @@
           1,
           1,
           1,
-          2,
+          1,
           1,
           1,
           null,
@@ -323,25 +333,8 @@
           null,
           null
         ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/services/open_library_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1664206476
+    "timestamp": 1664207164
   }
 }
