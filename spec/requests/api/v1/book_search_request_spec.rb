@@ -41,6 +41,5 @@ RSpec.describe 'Book Search data' do
 
     expect(book_search_data[:attributes][:books]).to be_a Array
     expect(book_search_data[:attributes][:books].count).to eq(5)
-
   end
 end
