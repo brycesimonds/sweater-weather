@@ -8,6 +8,29 @@
           1,
           1,
           null,
+          0,
+          null,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
           1,
           null,
           null,
@@ -16,13 +39,6 @@
           null,
           1,
           null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
           1,
           1,
           null,
@@ -327,6 +343,21 @@
           null
         ]
       },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           1,
@@ -334,6 +365,11 @@
           1,
           1,
           1,
+          1,
+          0,
+          null,
+          1,
+          null,
           null,
           0,
           null,
@@ -356,7 +392,7 @@
         "lines": [
           1,
           1,
-          1,
+          0,
           null,
           null
         ]
@@ -377,43 +413,8 @@
           null,
           null
         ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/models/user.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/serializers/user_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1664225827
+    "timestamp": 1664226904
   }
 }

@@ -21,4 +21,20 @@ RSpec.describe 'User data' do
     expect(created_user.password).to eq(user_params[:password])
     expect(created_user.password).to eq('password')
   end
+
+  it "sad path create: api call with invalid data sends 400 code and error message", :vcr do 
+    User.create!(email: 'whatever@example.com', password: 'cheese', api_key: "123")
+    
+    user_params = ({
+      email: "whatever@example.com",
+      password: "password",
+      password_confirmation: "password"
+    })
+    headers = {"CONTENT_TYPE" => "application/json"}
+
+    post "/api/v1/users" , headers: headers, params: JSON.generate(user_params)
+
+    expect(response.status).to eq(400)
+    expect(response.body).to eq("{\"errors\":\"Passwords do not match, fields are missing, or this email has already been taken\"}")
+  end
 end
