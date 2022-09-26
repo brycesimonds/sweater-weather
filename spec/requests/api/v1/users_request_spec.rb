@@ -18,8 +18,7 @@ RSpec.describe 'User data' do
 
     expect(created_user.email).to eq(user_params[:email])
     expect(created_user.email).to eq('whatever@example.com')
-    expect(created_user.password).to eq(user_params[:password])
-    expect(created_user.password).to eq('password')
+    expect(created_user.password_digest).to_not eq(user_params[:password])
   end
 
   it "sad path create: api call with invalid data sends 400 code and error message", :vcr do 
