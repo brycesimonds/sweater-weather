@@ -1185,317 +1185,294 @@ RSpec.describe RoadTrip do
   }
 
   weather_data = {
-    "lat": 42.3585,
-    "lon": -71.0608,
+    "lat": 42.3589,
+    "lon": -71.0567,
     "timezone": "America/New_York",
     "timezone_offset": -14400,
     "current": {
-        "dt": 1664301622,
-        "sunrise": 1664275011,
-        "sunset": 1664318012,
-        "temp": 295.63,
-        "feels_like": 295.19,
+        "dt": 1664307301,
+        "sunrise": 1664275010,
+        "sunset": 1664318011,
+        "temp": 72.9,
+        "feels_like": 71.82,
         "pressure": 1008,
-        "humidity": 48,
-        "dew_point": 284.09,
-        "uvi": 3.22,
-        "clouds": 91,
+        "humidity": 41,
+        "dew_point": 47.84,
+        "uvi": 1.55,
+        "clouds": 75,
         "visibility": 10000,
-        "wind_speed": 5.36,
-        "wind_deg": 0,
-        "wind_gust": 7.15,
+        "wind_speed": 21.85,
+        "wind_deg": 230,
+        "wind_gust": 28.77,
         "weather": [
             {
-                "id": 804,
+                "id": 803,
                 "main": "Clouds",
-                "description": "overcast clouds",
+                "description": "broken clouds",
                 "icon": "04d"
             }
         ]
     },
     "minutely": [
         {
-            "dt": 1664301660,
+            "dt": 1664307360,
             "precipitation": 0
         },
         {
-            "dt": 1664301720,
+            "dt": 1664307420,
             "precipitation": 0
         },
         {
-            "dt": 1664301780,
+            "dt": 1664307480,
             "precipitation": 0
         },
         {
-            "dt": 1664301840,
+            "dt": 1664307540,
             "precipitation": 0
         },
         {
-            "dt": 1664301900,
+            "dt": 1664307600,
             "precipitation": 0
         },
         {
-            "dt": 1664301960,
+            "dt": 1664307660,
             "precipitation": 0
         },
         {
-            "dt": 1664302020,
+            "dt": 1664307720,
             "precipitation": 0
         },
         {
-            "dt": 1664302080,
+            "dt": 1664307780,
             "precipitation": 0
         },
         {
-            "dt": 1664302140,
+            "dt": 1664307840,
             "precipitation": 0
         },
         {
-            "dt": 1664302200,
+            "dt": 1664307900,
             "precipitation": 0
         },
         {
-            "dt": 1664302260,
+            "dt": 1664307960,
             "precipitation": 0
         },
         {
-            "dt": 1664302320,
+            "dt": 1664308020,
             "precipitation": 0
         },
         {
-            "dt": 1664302380,
+            "dt": 1664308080,
             "precipitation": 0
         },
         {
-            "dt": 1664302440,
+            "dt": 1664308140,
             "precipitation": 0
         },
         {
-            "dt": 1664302500,
+            "dt": 1664308200,
             "precipitation": 0
         },
         {
-            "dt": 1664302560,
+            "dt": 1664308260,
             "precipitation": 0
         },
         {
-            "dt": 1664302620,
+            "dt": 1664308320,
             "precipitation": 0
         },
         {
-            "dt": 1664302680,
+            "dt": 1664308380,
             "precipitation": 0
         },
         {
-            "dt": 1664302740,
+            "dt": 1664308440,
             "precipitation": 0
         },
         {
-            "dt": 1664302800,
+            "dt": 1664308500,
             "precipitation": 0
         },
         {
-            "dt": 1664302860,
+            "dt": 1664308560,
             "precipitation": 0
         },
         {
-            "dt": 1664302920,
+            "dt": 1664308620,
             "precipitation": 0
         },
         {
-            "dt": 1664302980,
+            "dt": 1664308680,
             "precipitation": 0
         },
         {
-            "dt": 1664303040,
+            "dt": 1664308740,
             "precipitation": 0
         },
         {
-            "dt": 1664303100,
+            "dt": 1664308800,
             "precipitation": 0
         },
         {
-            "dt": 1664303160,
+            "dt": 1664308860,
             "precipitation": 0
         },
         {
-            "dt": 1664303220,
+            "dt": 1664308920,
             "precipitation": 0
         },
         {
-            "dt": 1664303280,
+            "dt": 1664308980,
             "precipitation": 0
         },
         {
-            "dt": 1664303340,
+            "dt": 1664309040,
             "precipitation": 0
         },
         {
-            "dt": 1664303400,
+            "dt": 1664309100,
             "precipitation": 0
         },
         {
-            "dt": 1664303460,
+            "dt": 1664309160,
             "precipitation": 0
         },
         {
-            "dt": 1664303520,
+            "dt": 1664309220,
             "precipitation": 0
         },
         {
-            "dt": 1664303580,
+            "dt": 1664309280,
             "precipitation": 0
         },
         {
-            "dt": 1664303640,
+            "dt": 1664309340,
             "precipitation": 0
         },
         {
-            "dt": 1664303700,
+            "dt": 1664309400,
             "precipitation": 0
         },
         {
-            "dt": 1664303760,
+            "dt": 1664309460,
             "precipitation": 0
         },
         {
-            "dt": 1664303820,
+            "dt": 1664309520,
             "precipitation": 0
         },
         {
-            "dt": 1664303880,
+            "dt": 1664309580,
             "precipitation": 0
         },
         {
-            "dt": 1664303940,
+            "dt": 1664309640,
             "precipitation": 0
         },
         {
-            "dt": 1664304000,
+            "dt": 1664309700,
             "precipitation": 0
         },
         {
-            "dt": 1664304060,
+            "dt": 1664309760,
             "precipitation": 0
         },
         {
-            "dt": 1664304120,
+            "dt": 1664309820,
             "precipitation": 0
         },
         {
-            "dt": 1664304180,
+            "dt": 1664309880,
             "precipitation": 0
         },
         {
-            "dt": 1664304240,
+            "dt": 1664309940,
             "precipitation": 0
         },
         {
-            "dt": 1664304300,
+            "dt": 1664310000,
             "precipitation": 0
         },
         {
-            "dt": 1664304360,
+            "dt": 1664310060,
             "precipitation": 0
         },
         {
-            "dt": 1664304420,
+            "dt": 1664310120,
             "precipitation": 0
         },
         {
-            "dt": 1664304480,
+            "dt": 1664310180,
             "precipitation": 0
         },
         {
-            "dt": 1664304540,
+            "dt": 1664310240,
             "precipitation": 0
         },
         {
-            "dt": 1664304600,
+            "dt": 1664310300,
             "precipitation": 0
         },
         {
-            "dt": 1664304660,
+            "dt": 1664310360,
             "precipitation": 0
         },
         {
-            "dt": 1664304720,
+            "dt": 1664310420,
             "precipitation": 0
         },
         {
-            "dt": 1664304780,
+            "dt": 1664310480,
             "precipitation": 0
         },
         {
-            "dt": 1664304840,
+            "dt": 1664310540,
             "precipitation": 0
         },
         {
-            "dt": 1664304900,
+            "dt": 1664310600,
             "precipitation": 0
         },
         {
-            "dt": 1664304960,
+            "dt": 1664310660,
             "precipitation": 0
         },
         {
-            "dt": 1664305020,
+            "dt": 1664310720,
             "precipitation": 0
         },
         {
-            "dt": 1664305080,
+            "dt": 1664310780,
             "precipitation": 0
         },
         {
-            "dt": 1664305140,
+            "dt": 1664310840,
             "precipitation": 0
         },
         {
-            "dt": 1664305200,
+            "dt": 1664310900,
             "precipitation": 0
         },
         {
-            "dt": 1664305260,
+            "dt": 1664310960,
             "precipitation": 0
         }
     ],
     "hourly": [
         {
-            "dt": 1664301600,
-            "temp": 295.63,
-            "feels_like": 295.19,
-            "pressure": 1008,
-            "humidity": 48,
-            "dew_point": 284.09,
-            "uvi": 3.22,
-            "clouds": 91,
-            "visibility": 10000,
-            "wind_speed": 5.17,
-            "wind_deg": 223,
-            "wind_gust": 8.9,
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "overcast clouds",
-                    "icon": "04d"
-                }
-            ],
-            "pop": 0
-        },
-        {
             "dt": 1664305200,
-            "temp": 295.66,
-            "feels_like": 295.12,
+            "temp": 72.95,
+            "feels_like": 71.78,
             "pressure": 1008,
-            "humidity": 44,
-            "dew_point": 282.81,
-            "uvi": 2.7,
-            "clouds": 74,
+            "humidity": 39,
+            "dew_point": 46.56,
+            "uvi": 2.76,
+            "clouds": 62,
             "visibility": 10000,
-            "wind_speed": 5.33,
-            "wind_deg": 230,
-            "wind_gust": 8.1,
+            "wind_speed": 12.3,
+            "wind_deg": 229,
+            "wind_gust": 19.06,
             "weather": [
                 {
                     "id": 803,
@@ -1508,17 +1485,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664308800,
-            "temp": 295.56,
-            "feels_like": 294.95,
+            "temp": 72.9,
+            "feels_like": 71.82,
             "pressure": 1008,
-            "humidity": 42,
-            "dew_point": 282.03,
-            "uvi": 1.52,
-            "clouds": 57,
+            "humidity": 41,
+            "dew_point": 47.84,
+            "uvi": 1.55,
+            "clouds": 75,
             "visibility": 10000,
-            "wind_speed": 4.78,
-            "wind_deg": 232,
-            "wind_gust": 7.54,
+            "wind_speed": 10.94,
+            "wind_deg": 233,
+            "wind_gust": 17.34,
             "weather": [
                 {
                     "id": 803,
@@ -1531,17 +1508,40 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664312400,
-            "temp": 294.97,
-            "feels_like": 294.3,
+            "temp": 72.45,
+            "feels_like": 71.28,
             "pressure": 1008,
-            "humidity": 42,
-            "dew_point": 281.5,
-            "uvi": 0.61,
-            "clouds": 39,
+            "humidity": 40,
+            "dew_point": 46.8,
+            "uvi": 0.62,
+            "clouds": 61,
             "visibility": 10000,
-            "wind_speed": 4.18,
-            "wind_deg": 227,
-            "wind_gust": 7.34,
+            "wind_speed": 9.75,
+            "wind_deg": 232,
+            "wind_gust": 16.69,
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "broken clouds",
+                    "icon": "04d"
+                }
+            ],
+            "pop": 0
+        },
+        {
+            "dt": 1664316000,
+            "temp": 70.59,
+            "feels_like": 69.37,
+            "pressure": 1008,
+            "humidity": 43,
+            "dew_point": 47.03,
+            "uvi": 0.14,
+            "clouds": 47,
+            "visibility": 10000,
+            "wind_speed": 7.78,
+            "wind_deg": 221,
+            "wind_gust": 17.22,
             "weather": [
                 {
                     "id": 802,
@@ -1553,115 +1553,92 @@ RSpec.describe RoadTrip do
             "pop": 0
         },
         {
-            "dt": 1664316000,
-            "temp": 293.17,
-            "feels_like": 292.43,
-            "pressure": 1009,
-            "humidity": 46,
-            "dew_point": 281.21,
-            "uvi": 0.13,
-            "clouds": 21,
-            "visibility": 10000,
-            "wind_speed": 3.58,
-            "wind_deg": 217,
-            "wind_gust": 7.86,
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "few clouds",
-                    "icon": "02d"
-                }
-            ],
-            "pop": 0
-        },
-        {
             "dt": 1664319600,
-            "temp": 290.75,
-            "feels_like": 289.9,
-            "pressure": 1010,
-            "humidity": 51,
-            "dew_point": 280.4,
+            "temp": 67.37,
+            "feels_like": 66.02,
+            "pressure": 1009,
+            "humidity": 47,
+            "dew_point": 46.47,
             "uvi": 0,
-            "clouds": 4,
+            "clouds": 32,
             "visibility": 10000,
-            "wind_speed": 3.47,
-            "wind_deg": 214,
-            "wind_gust": 8.69,
+            "wind_speed": 7,
+            "wind_deg": 212,
+            "wind_gust": 17.47,
             "weather": [
                 {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "scattered clouds",
+                    "icon": "03n"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664323200,
-            "temp": 290.22,
-            "feels_like": 289.42,
-            "pressure": 1011,
-            "humidity": 55,
-            "dew_point": 280.81,
+            "temp": 64.09,
+            "feels_like": 62.69,
+            "pressure": 1010,
+            "humidity": 53,
+            "dew_point": 46.63,
             "uvi": 0,
-            "clouds": 10,
+            "clouds": 19,
             "visibility": 10000,
-            "wind_speed": 3.27,
-            "wind_deg": 230,
-            "wind_gust": 8.18,
+            "wind_speed": 7,
+            "wind_deg": 227,
+            "wind_gust": 19.19,
             "weather": [
                 {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "few clouds",
+                    "icon": "02n"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664326800,
-            "temp": 290.18,
-            "feels_like": 289.43,
+            "temp": 61.36,
+            "feels_like": 59.92,
             "pressure": 1011,
-            "humidity": 57,
-            "dew_point": 281.45,
+            "humidity": 58,
+            "dew_point": 46.22,
             "uvi": 0,
-            "clouds": 97,
+            "clouds": 45,
             "visibility": 10000,
-            "wind_speed": 2.83,
-            "wind_deg": 236,
-            "wind_gust": 6.88,
+            "wind_speed": 6.04,
+            "wind_deg": 238,
+            "wind_gust": 15.7,
             "weather": [
                 {
-                    "id": 804,
+                    "id": 802,
                     "main": "Clouds",
-                    "description": "overcast clouds",
-                    "icon": "04n"
+                    "description": "scattered clouds",
+                    "icon": "03n"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664330400,
-            "temp": 289.8,
-            "feels_like": 289.11,
+            "temp": 61.72,
+            "feels_like": 60.37,
             "pressure": 1012,
-            "humidity": 61,
-            "dew_point": 281.98,
+            "humidity": 59,
+            "dew_point": 46.98,
             "uvi": 0,
-            "clouds": 97,
+            "clouds": 73,
             "visibility": 10000,
-            "wind_speed": 2.57,
-            "wind_deg": 238,
-            "wind_gust": 6.52,
+            "wind_speed": 5.39,
+            "wind_deg": 239,
+            "wind_gust": 13.42,
             "weather": [
                 {
-                    "id": 804,
+                    "id": 803,
                     "main": "Clouds",
-                    "description": "overcast clouds",
+                    "description": "broken clouds",
                     "icon": "04n"
                 }
             ],
@@ -1669,22 +1646,22 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664334000,
-            "temp": 288.65,
-            "feels_like": 287.98,
+            "temp": 60.48,
+            "feels_like": 59.23,
             "pressure": 1012,
-            "humidity": 66,
-            "dew_point": 282.2,
+            "humidity": 64,
+            "dew_point": 47.73,
             "uvi": 0,
-            "clouds": 88,
+            "clouds": 76,
             "visibility": 10000,
-            "wind_speed": 2.57,
-            "wind_deg": 252,
-            "wind_gust": 6.8,
+            "wind_speed": 5.26,
+            "wind_deg": 249,
+            "wind_gust": 13.09,
             "weather": [
                 {
-                    "id": 804,
+                    "id": 803,
                     "main": "Clouds",
-                    "description": "overcast clouds",
+                    "description": "broken clouds",
                     "icon": "04n"
                 }
             ],
@@ -1692,17 +1669,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664337600,
-            "temp": 287.35,
-            "feels_like": 286.71,
-            "pressure": 1013,
-            "humidity": 72,
-            "dew_point": 282.17,
+            "temp": 59.07,
+            "feels_like": 57.88,
+            "pressure": 1012,
+            "humidity": 68,
+            "dew_point": 48.16,
             "uvi": 0,
-            "clouds": 67,
+            "clouds": 75,
             "visibility": 10000,
-            "wind_speed": 2.61,
-            "wind_deg": 251,
-            "wind_gust": 7.3,
+            "wind_speed": 5.48,
+            "wind_deg": 249,
+            "wind_gust": 13.69,
             "weather": [
                 {
                     "id": 803,
@@ -1715,17 +1692,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664341200,
-            "temp": 286.77,
-            "feels_like": 286.12,
-            "pressure": 1013,
-            "humidity": 74,
-            "dew_point": 282.12,
+            "temp": 57.06,
+            "feels_like": 55.89,
+            "pressure": 1012,
+            "humidity": 73,
+            "dew_point": 48,
             "uvi": 0,
-            "clouds": 61,
+            "clouds": 66,
             "visibility": 10000,
-            "wind_speed": 2.81,
-            "wind_deg": 251,
-            "wind_gust": 7.04,
+            "wind_speed": 5.5,
+            "wind_deg": 248,
+            "wind_gust": 14.41,
             "weather": [
                 {
                     "id": 803,
@@ -1738,17 +1715,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664344800,
-            "temp": 286.06,
-            "feels_like": 285.42,
+            "temp": 55.65,
+            "feels_like": 54.48,
             "pressure": 1013,
-            "humidity": 77,
-            "dew_point": 282,
+            "humidity": 76,
+            "dew_point": 47.79,
             "uvi": 0,
-            "clouds": 53,
+            "clouds": 56,
             "visibility": 10000,
-            "wind_speed": 2.98,
-            "wind_deg": 241,
-            "wind_gust": 7.42,
+            "wind_speed": 6.11,
+            "wind_deg": 242,
+            "wind_gust": 15.84,
             "weather": [
                 {
                     "id": 803,
@@ -1761,17 +1738,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664348400,
-            "temp": 285.57,
-            "feels_like": 284.93,
-            "pressure": 1014,
-            "humidity": 79,
-            "dew_point": 281.9,
+            "temp": 54.82,
+            "feels_like": 53.62,
+            "pressure": 1013,
+            "humidity": 77,
+            "dew_point": 47.53,
             "uvi": 0,
             "clouds": 5,
             "visibility": 10000,
-            "wind_speed": 2.91,
-            "wind_deg": 247,
-            "wind_gust": 7.8,
+            "wind_speed": 6.35,
+            "wind_deg": 243,
+            "wind_gust": 17.16,
             "weather": [
                 {
                     "id": 800,
@@ -1784,17 +1761,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664352000,
-            "temp": 285.24,
-            "feels_like": 284.59,
-            "pressure": 1014,
-            "humidity": 80,
-            "dew_point": 281.82,
+            "temp": 54.07,
+            "feels_like": 52.88,
+            "pressure": 1013,
+            "humidity": 79,
+            "dew_point": 47.32,
             "uvi": 0,
-            "clouds": 4,
+            "clouds": 3,
             "visibility": 10000,
-            "wind_speed": 2.95,
-            "wind_deg": 252,
-            "wind_gust": 8.19,
+            "wind_speed": 6.22,
+            "wind_deg": 245,
+            "wind_gust": 16.91,
             "weather": [
                 {
                     "id": 800,
@@ -1807,17 +1784,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664355600,
-            "temp": 284.91,
-            "feels_like": 284.28,
+            "temp": 53.38,
+            "feels_like": 52.18,
             "pressure": 1014,
-            "humidity": 82,
-            "dew_point": 281.72,
+            "humidity": 80,
+            "dew_point": 47.16,
             "uvi": 0,
-            "clouds": 4,
+            "clouds": 2,
             "visibility": 10000,
-            "wind_speed": 2.87,
-            "wind_deg": 250,
-            "wind_gust": 7.97,
+            "wind_speed": 6.04,
+            "wind_deg": 243,
+            "wind_gust": 16.62,
             "weather": [
                 {
                     "id": 800,
@@ -1830,17 +1807,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664359200,
-            "temp": 284.65,
-            "feels_like": 284.02,
-            "pressure": 1015,
-            "humidity": 83,
-            "dew_point": 281.66,
+            "temp": 53.02,
+            "feels_like": 51.84,
+            "pressure": 1014,
+            "humidity": 81,
+            "dew_point": 46.96,
             "uvi": 0,
-            "clouds": 4,
+            "clouds": 2,
             "visibility": 10000,
-            "wind_speed": 3.07,
-            "wind_deg": 256,
-            "wind_gust": 8.77,
+            "wind_speed": 6.53,
+            "wind_deg": 249,
+            "wind_gust": 19.04,
             "weather": [
                 {
                     "id": 800,
@@ -1853,17 +1830,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664362800,
-            "temp": 284.5,
-            "feels_like": 283.86,
+            "temp": 53.1,
+            "feels_like": 51.91,
             "pressure": 1015,
-            "humidity": 83,
-            "dew_point": 281.58,
+            "humidity": 81,
+            "dew_point": 47.05,
             "uvi": 0,
-            "clouds": 4,
+            "clouds": 3,
             "visibility": 10000,
-            "wind_speed": 3.05,
-            "wind_deg": 260,
-            "wind_gust": 9.08,
+            "wind_speed": 6.89,
+            "wind_deg": 259,
+            "wind_gust": 20.8,
             "weather": [
                 {
                     "id": 800,
@@ -1876,17 +1853,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664366400,
-            "temp": 285.97,
-            "feels_like": 285.27,
-            "pressure": 1016,
+            "temp": 55.89,
+            "feels_like": 54.7,
+            "pressure": 1015,
             "humidity": 75,
-            "dew_point": 281.63,
-            "uvi": 0.3,
+            "dew_point": 47.77,
+            "uvi": 0.29,
             "clouds": 3,
             "visibility": 10000,
-            "wind_speed": 3.29,
-            "wind_deg": 267,
-            "wind_gust": 8.49,
+            "wind_speed": 7.7,
+            "wind_deg": 265,
+            "wind_gust": 20.38,
             "weather": [
                 {
                     "id": 800,
@@ -1899,17 +1876,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664370000,
-            "temp": 288.26,
-            "feels_like": 287.5,
-            "pressure": 1016,
-            "humidity": 64,
-            "dew_point": 281.41,
-            "uvi": 1.01,
-            "clouds": 0,
+            "temp": 59.92,
+            "feels_like": 58.66,
+            "pressure": 1015,
+            "humidity": 65,
+            "dew_point": 47.84,
+            "uvi": 0.99,
+            "clouds": 5,
             "visibility": 10000,
-            "wind_speed": 3.76,
-            "wind_deg": 273,
-            "wind_gust": 7.37,
+            "wind_speed": 8.72,
+            "wind_deg": 272,
+            "wind_gust": 17.22,
             "weather": [
                 {
                     "id": 800,
@@ -1922,17 +1899,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664373600,
-            "temp": 290.31,
-            "feels_like": 289.52,
-            "pressure": 1017,
-            "humidity": 55,
-            "dew_point": 281.13,
-            "uvi": 2.13,
-            "clouds": 0,
+            "temp": 63.5,
+            "feels_like": 62.19,
+            "pressure": 1016,
+            "humidity": 56,
+            "dew_point": 47.55,
+            "uvi": 2.1,
+            "clouds": 4,
             "visibility": 10000,
-            "wind_speed": 4.3,
-            "wind_deg": 272,
-            "wind_gust": 7.04,
+            "wind_speed": 8.84,
+            "wind_deg": 275,
+            "wind_gust": 15.14,
             "weather": [
                 {
                     "id": 800,
@@ -1945,17 +1922,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664377200,
-            "temp": 291.86,
-            "feels_like": 291.07,
-            "pressure": 1017,
+            "temp": 66.34,
+            "feels_like": 64.98,
+            "pressure": 1016,
             "humidity": 49,
-            "dew_point": 280.91,
-            "uvi": 3.38,
-            "clouds": 0,
+            "dew_point": 46.62,
+            "uvi": 3.33,
+            "clouds": 2,
             "visibility": 10000,
-            "wind_speed": 4.37,
+            "wind_speed": 8.75,
             "wind_deg": 274,
-            "wind_gust": 6.38,
+            "wind_gust": 13.82,
             "weather": [
                 {
                     "id": 800,
@@ -1968,17 +1945,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664380800,
-            "temp": 292.94,
-            "feels_like": 292.18,
-            "pressure": 1017,
-            "humidity": 46,
-            "dew_point": 280.76,
-            "uvi": 4.05,
-            "clouds": 0,
+            "temp": 68.31,
+            "feels_like": 66.9,
+            "pressure": 1016,
+            "humidity": 44,
+            "dew_point": 45.66,
+            "uvi": 4.33,
+            "clouds": 2,
             "visibility": 10000,
-            "wind_speed": 4.19,
-            "wind_deg": 277,
-            "wind_gust": 5.96,
+            "wind_speed": 8.99,
+            "wind_deg": 274,
+            "wind_gust": 13.53,
             "weather": [
                 {
                     "id": 800,
@@ -1991,17 +1968,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664384400,
-            "temp": 293.63,
-            "feels_like": 292.86,
-            "pressure": 1017,
-            "humidity": 43,
-            "dew_point": 280.6,
-            "uvi": 4.25,
-            "clouds": 0,
+            "temp": 69.53,
+            "feels_like": 68.16,
+            "pressure": 1016,
+            "humidity": 42,
+            "dew_point": 45.16,
+            "uvi": 4.54,
+            "clouds": 2,
             "visibility": 10000,
-            "wind_speed": 3.87,
-            "wind_deg": 279,
-            "wind_gust": 5.46,
+            "wind_speed": 9.28,
+            "wind_deg": 275,
+            "wind_gust": 13.27,
             "weather": [
                 {
                     "id": 800,
@@ -2014,17 +1991,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664388000,
-            "temp": 294.17,
-            "feels_like": 293.4,
-            "pressure": 1017,
-            "humidity": 41,
-            "dew_point": 280.51,
-            "uvi": 3.71,
-            "clouds": 0,
+            "temp": 70.3,
+            "feels_like": 68.92,
+            "pressure": 1016,
+            "humidity": 40,
+            "dew_point": 44.87,
+            "uvi": 3.96,
+            "clouds": 2,
             "visibility": 10000,
-            "wind_speed": 3.38,
-            "wind_deg": 283,
-            "wind_gust": 4.96,
+            "wind_speed": 9.13,
+            "wind_deg": 275,
+            "wind_gust": 13.06,
             "weather": [
                 {
                     "id": 800,
@@ -2037,63 +2014,63 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664391600,
-            "temp": 294.5,
-            "feels_like": 293.74,
-            "pressure": 1017,
-            "humidity": 40,
-            "dew_point": 280.4,
-            "uvi": 1.22,
-            "clouds": 10,
+            "temp": 70.72,
+            "feels_like": 69.31,
+            "pressure": 1016,
+            "humidity": 39,
+            "dew_point": 44.56,
+            "uvi": 2.76,
+            "clouds": 12,
             "visibility": 10000,
-            "wind_speed": 3,
-            "wind_deg": 283,
-            "wind_gust": 4.63,
+            "wind_speed": 8.28,
+            "wind_deg": 279,
+            "wind_gust": 11.74,
             "weather": [
                 {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "few clouds",
+                    "icon": "02d"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664395200,
-            "temp": 294.41,
-            "feels_like": 293.66,
-            "pressure": 1017,
-            "humidity": 41,
-            "dew_point": 280.53,
-            "uvi": 0.68,
-            "clouds": 10,
+            "temp": 69.94,
+            "feels_like": 68.61,
+            "pressure": 1016,
+            "humidity": 42,
+            "dew_point": 45.73,
+            "uvi": 1.55,
+            "clouds": 13,
             "visibility": 10000,
-            "wind_speed": 2.83,
-            "wind_deg": 289,
-            "wind_gust": 3.82,
+            "wind_speed": 8.99,
+            "wind_deg": 297,
+            "wind_gust": 10.51,
             "weather": [
                 {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "few clouds",
+                    "icon": "02d"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664398800,
-            "temp": 293.66,
-            "feels_like": 292.94,
-            "pressure": 1018,
-            "humidity": 45,
-            "dew_point": 281.24,
-            "uvi": 0.27,
-            "clouds": 23,
+            "temp": 68.13,
+            "feels_like": 66.9,
+            "pressure": 1017,
+            "humidity": 48,
+            "dew_point": 47.52,
+            "uvi": 0.61,
+            "clouds": 16,
             "visibility": 10000,
-            "wind_speed": 3.09,
-            "wind_deg": 303,
-            "wind_gust": 4.03,
+            "wind_speed": 8.84,
+            "wind_deg": 307,
+            "wind_gust": 10.51,
             "weather": [
                 {
                     "id": 801,
@@ -2106,17 +2083,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664402400,
-            "temp": 292.14,
-            "feels_like": 291.43,
+            "temp": 65.62,
+            "feels_like": 64.42,
             "pressure": 1018,
-            "humidity": 51,
-            "dew_point": 281.49,
-            "uvi": 0.08,
-            "clouds": 39,
+            "humidity": 54,
+            "dew_point": 48.38,
+            "uvi": 0.09,
+            "clouds": 25,
             "visibility": 10000,
-            "wind_speed": 2.87,
-            "wind_deg": 327,
-            "wind_gust": 5.4,
+            "wind_speed": 6.42,
+            "wind_deg": 299,
+            "wind_gust": 12.84,
             "weather": [
                 {
                     "id": 802,
@@ -2129,17 +2106,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664406000,
-            "temp": 290.97,
-            "feels_like": 290.22,
+            "temp": 64.11,
+            "feels_like": 62.91,
             "pressure": 1019,
-            "humidity": 54,
-            "dew_point": 281.59,
+            "humidity": 57,
+            "dew_point": 48.16,
             "uvi": 0,
-            "clouds": 49,
+            "clouds": 40,
             "visibility": 10000,
-            "wind_speed": 1.95,
-            "wind_deg": 329,
-            "wind_gust": 4.14,
+            "wind_speed": 5.84,
+            "wind_deg": 300,
+            "wind_gust": 13.42,
             "weather": [
                 {
                     "id": 802,
@@ -2152,40 +2129,40 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664409600,
-            "temp": 290.55,
-            "feels_like": 289.81,
+            "temp": 63.84,
+            "feels_like": 62.65,
             "pressure": 1020,
-            "humidity": 56,
-            "dew_point": 281.63,
+            "humidity": 58,
+            "dew_point": 48.51,
             "uvi": 0,
-            "clouds": 58,
+            "clouds": 50,
             "visibility": 10000,
-            "wind_speed": 2.33,
-            "wind_deg": 327,
-            "wind_gust": 5.5,
+            "wind_speed": 6.17,
+            "wind_deg": 310,
+            "wind_gust": 14.54,
             "weather": [
                 {
-                    "id": 803,
+                    "id": 802,
                     "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
+                    "description": "scattered clouds",
+                    "icon": "03n"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664413200,
-            "temp": 290.19,
-            "feels_like": 289.49,
-            "pressure": 1020,
-            "humidity": 59,
-            "dew_point": 281.88,
+            "temp": 62.96,
+            "feels_like": 61.83,
+            "pressure": 1021,
+            "humidity": 61,
+            "dew_point": 49.06,
             "uvi": 0,
-            "clouds": 99,
+            "clouds": 97,
             "visibility": 10000,
-            "wind_speed": 2.64,
-            "wind_deg": 330,
-            "wind_gust": 6.47,
+            "wind_speed": 6.67,
+            "wind_deg": 320,
+            "wind_gust": 15.35,
             "weather": [
                 {
                     "id": 804,
@@ -2198,22 +2175,22 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664416800,
-            "temp": 289.22,
-            "feels_like": 288.55,
+            "temp": 61.36,
+            "feels_like": 60.24,
             "pressure": 1021,
-            "humidity": 64,
-            "dew_point": 282.16,
+            "humidity": 65,
+            "dew_point": 49.1,
             "uvi": 0,
-            "clouds": 90,
+            "clouds": 83,
             "visibility": 10000,
-            "wind_speed": 2.63,
-            "wind_deg": 335,
-            "wind_gust": 7.23,
+            "wind_speed": 7.49,
+            "wind_deg": 324,
+            "wind_gust": 18.1,
             "weather": [
                 {
-                    "id": 804,
+                    "id": 803,
                     "main": "Clouds",
-                    "description": "overcast clouds",
+                    "description": "broken clouds",
                     "icon": "04n"
                 }
             ],
@@ -2221,17 +2198,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664420400,
-            "temp": 288.18,
-            "feels_like": 287.54,
-            "pressure": 1021,
-            "humidity": 69,
-            "dew_point": 282.24,
+            "temp": 58.96,
+            "feels_like": 57.85,
+            "pressure": 1022,
+            "humidity": 70,
+            "dew_point": 48.79,
             "uvi": 0,
-            "clouds": 80,
+            "clouds": 62,
             "visibility": 10000,
-            "wind_speed": 2.57,
+            "wind_speed": 7.27,
             "wind_deg": 331,
-            "wind_gust": 7.86,
+            "wind_gust": 19.42,
             "weather": [
                 {
                     "id": 803,
@@ -2244,86 +2221,86 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664424000,
-            "temp": 287.29,
-            "feels_like": 286.61,
-            "pressure": 1021,
-            "humidity": 71,
-            "dew_point": 281.93,
+            "temp": 57.54,
+            "feels_like": 56.43,
+            "pressure": 1022,
+            "humidity": 73,
+            "dew_point": 48.54,
             "uvi": 0,
-            "clouds": 68,
+            "clouds": 47,
             "visibility": 10000,
-            "wind_speed": 2.92,
-            "wind_deg": 329,
-            "wind_gust": 8.07,
+            "wind_speed": 7.45,
+            "wind_deg": 339,
+            "wind_gust": 18.66,
             "weather": [
                 {
-                    "id": 803,
+                    "id": 802,
                     "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
+                    "description": "scattered clouds",
+                    "icon": "03n"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664427600,
-            "temp": 286.66,
-            "feels_like": 285.97,
+            "temp": 56.16,
+            "feels_like": 55.04,
             "pressure": 1022,
-            "humidity": 73,
-            "dew_point": 281.8,
+            "humidity": 76,
+            "dew_point": 48.45,
             "uvi": 0,
-            "clouds": 63,
+            "clouds": 37,
             "visibility": 10000,
-            "wind_speed": 3.06,
-            "wind_deg": 331,
-            "wind_gust": 7.91,
+            "wind_speed": 7,
+            "wind_deg": 345,
+            "wind_gust": 16.04,
             "weather": [
                 {
-                    "id": 803,
+                    "id": 802,
                     "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
+                    "description": "scattered clouds",
+                    "icon": "03n"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664431200,
-            "temp": 286.16,
-            "feels_like": 285.5,
-            "pressure": 1022,
-            "humidity": 76,
-            "dew_point": 281.86,
+            "temp": 55.11,
+            "feels_like": 54.03,
+            "pressure": 1023,
+            "humidity": 79,
+            "dew_point": 48.61,
             "uvi": 0,
-            "clouds": 53,
+            "clouds": 31,
             "visibility": 10000,
-            "wind_speed": 3.14,
-            "wind_deg": 353,
-            "wind_gust": 7.87,
+            "wind_speed": 5.82,
+            "wind_deg": 355,
+            "wind_gust": 14.05,
             "weather": [
                 {
-                    "id": 803,
+                    "id": 802,
                     "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
+                    "description": "scattered clouds",
+                    "icon": "03n"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664434800,
-            "temp": 285.87,
-            "feels_like": 285.29,
+            "temp": 54.66,
+            "feels_like": 53.64,
             "pressure": 1023,
-            "humidity": 80,
-            "dew_point": 282.25,
+            "humidity": 81,
+            "dew_point": 48.45,
             "uvi": 0,
             "clouds": 5,
             "visibility": 10000,
-            "wind_speed": 3.01,
-            "wind_deg": 2,
-            "wind_gust": 7.74,
+            "wind_speed": 5.61,
+            "wind_deg": 355,
+            "wind_gust": 12.46,
             "weather": [
                 {
                     "id": 800,
@@ -2336,17 +2313,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664438400,
-            "temp": 285.57,
-            "feels_like": 284.98,
+            "temp": 54.5,
+            "feels_like": 53.4,
             "pressure": 1023,
-            "humidity": 81,
-            "dew_point": 282.28,
+            "humidity": 80,
+            "dew_point": 48.15,
             "uvi": 0,
-            "clouds": 13,
+            "clouds": 18,
             "visibility": 10000,
-            "wind_speed": 3.05,
-            "wind_deg": 356,
-            "wind_gust": 7.45,
+            "wind_speed": 5.73,
+            "wind_deg": 351,
+            "wind_gust": 12.8,
             "weather": [
                 {
                     "id": 801,
@@ -2359,40 +2336,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664442000,
-            "temp": 285.74,
-            "feels_like": 285.09,
+            "temp": 54.63,
+            "feels_like": 53.46,
             "pressure": 1024,
             "humidity": 78,
-            "dew_point": 281.99,
+            "dew_point": 47.82,
             "uvi": 0,
-            "clouds": 23,
+            "clouds": 27,
             "visibility": 10000,
-            "wind_speed": 2.9,
-            "wind_deg": 351,
-            "wind_gust": 7.05,
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "few clouds",
-                    "icon": "02n"
-                }
-            ],
-            "pop": 0.03
-        },
-        {
-            "dt": 1664445600,
-            "temp": 285.89,
-            "feels_like": 285.26,
-            "pressure": 1024,
-            "humidity": 78,
-            "dew_point": 281.94,
-            "uvi": 0,
-            "clouds": 31,
-            "visibility": 10000,
-            "wind_speed": 3.22,
-            "wind_deg": 355,
-            "wind_gust": 7.6,
+            "wind_speed": 5.73,
+            "wind_deg": 344,
+            "wind_gust": 12.66,
             "weather": [
                 {
                     "id": 802,
@@ -2401,21 +2355,44 @@ RSpec.describe RoadTrip do
                     "icon": "03n"
                 }
             ],
-            "pop": 0.03
+            "pop": 0
+        },
+        {
+            "dt": 1664445600,
+            "temp": 54.86,
+            "feels_like": 53.67,
+            "pressure": 1024,
+            "humidity": 77,
+            "dew_point": 47.7,
+            "uvi": 0,
+            "clouds": 36,
+            "visibility": 10000,
+            "wind_speed": 5.12,
+            "wind_deg": 354,
+            "wind_gust": 11.88,
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "scattered clouds",
+                    "icon": "03n"
+                }
+            ],
+            "pop": 0
         },
         {
             "dt": 1664449200,
-            "temp": 286.15,
-            "feels_like": 285.52,
+            "temp": 55.53,
+            "feels_like": 54.36,
             "pressure": 1025,
-            "humidity": 77,
-            "dew_point": 282.04,
+            "humidity": 76,
+            "dew_point": 47.97,
             "uvi": 0,
-            "clouds": 38,
+            "clouds": 47,
             "visibility": 10000,
-            "wind_speed": 3.54,
-            "wind_deg": 0,
-            "wind_gust": 8.11,
+            "wind_speed": 5.7,
+            "wind_deg": 8,
+            "wind_gust": 13.56,
             "weather": [
                 {
                     "id": 802,
@@ -2428,40 +2405,40 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664452800,
-            "temp": 286.57,
-            "feels_like": 285.95,
-            "pressure": 1026,
-            "humidity": 76,
-            "dew_point": 282.23,
-            "uvi": 0.07,
-            "clouds": 45,
+            "temp": 56.97,
+            "feels_like": 55.83,
+            "pressure": 1025,
+            "humidity": 74,
+            "dew_point": 48.6,
+            "uvi": 0.09,
+            "clouds": 56,
             "visibility": 10000,
-            "wind_speed": 3.58,
-            "wind_deg": 7,
-            "wind_gust": 7.87,
+            "wind_speed": 7.43,
+            "wind_deg": 20,
+            "wind_gust": 14.65,
             "weather": [
                 {
-                    "id": 802,
+                    "id": 803,
                     "main": "Clouds",
-                    "description": "scattered clouds",
-                    "icon": "03d"
+                    "description": "broken clouds",
+                    "icon": "04d"
                 }
             ],
             "pop": 0
         },
         {
             "dt": 1664456400,
-            "temp": 287.08,
-            "feels_like": 286.46,
+            "temp": 57.27,
+            "feels_like": 56.14,
             "pressure": 1026,
-            "humidity": 74,
-            "dew_point": 282.32,
-            "uvi": 0.17,
-            "clouds": 93,
+            "humidity": 73,
+            "dew_point": 48.33,
+            "uvi": 0.34,
+            "clouds": 100,
             "visibility": 10000,
-            "wind_speed": 3.73,
-            "wind_deg": 14,
-            "wind_gust": 6.84,
+            "wind_speed": 8.75,
+            "wind_deg": 19,
+            "wind_gust": 14.67,
             "weather": [
                 {
                     "id": 804,
@@ -2474,17 +2451,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664460000,
-            "temp": 287.43,
-            "feels_like": 286.77,
+            "temp": 57.47,
+            "feels_like": 56.21,
             "pressure": 1027,
-            "humidity": 71,
-            "dew_point": 282.04,
-            "uvi": 0.36,
-            "clouds": 96,
+            "humidity": 70,
+            "dew_point": 47.41,
+            "uvi": 0.72,
+            "clouds": 100,
             "visibility": 10000,
-            "wind_speed": 3.9,
-            "wind_deg": 18,
-            "wind_gust": 6.16,
+            "wind_speed": 9.06,
+            "wind_deg": 19,
+            "wind_gust": 14.52,
             "weather": [
                 {
                     "id": 804,
@@ -2497,17 +2474,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664463600,
-            "temp": 287.72,
-            "feels_like": 286.98,
+            "temp": 57.9,
+            "feels_like": 56.5,
             "pressure": 1027,
-            "humidity": 67,
-            "dew_point": 281.59,
-            "uvi": 0.57,
-            "clouds": 98,
+            "humidity": 66,
+            "dew_point": 46.58,
+            "uvi": 1.15,
+            "clouds": 97,
             "visibility": 10000,
-            "wind_speed": 3.95,
-            "wind_deg": 22,
-            "wind_gust": 5.57,
+            "wind_speed": 9.28,
+            "wind_deg": 19,
+            "wind_gust": 13.18,
             "weather": [
                 {
                     "id": 804,
@@ -2520,17 +2497,17 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664467200,
-            "temp": 288.22,
-            "feels_like": 287.43,
+            "temp": 58.15,
+            "feels_like": 56.68,
             "pressure": 1027,
-            "humidity": 63,
-            "dew_point": 281.16,
-            "uvi": 3.01,
+            "humidity": 64,
+            "dew_point": 45.97,
+            "uvi": 2.87,
             "clouds": 98,
             "visibility": 10000,
-            "wind_speed": 3.74,
-            "wind_deg": 28,
-            "wind_gust": 4.72,
+            "wind_speed": 9.08,
+            "wind_deg": 24,
+            "wind_gust": 11.52,
             "weather": [
                 {
                     "id": 804,
@@ -2543,17 +2520,40 @@ RSpec.describe RoadTrip do
         },
         {
             "dt": 1664470800,
-            "temp": 288.78,
-            "feels_like": 287.94,
+            "temp": 59.36,
+            "feels_like": 57.87,
+            "pressure": 1027,
+            "humidity": 61,
+            "dew_point": 45.66,
+            "uvi": 3.01,
+            "clouds": 98,
+            "visibility": 10000,
+            "wind_speed": 8.23,
+            "wind_deg": 33,
+            "wind_gust": 9.51,
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04d"
+                }
+            ],
+            "pop": 0
+        },
+        {
+            "dt": 1664474400,
+            "temp": 60.33,
+            "feels_like": 58.84,
             "pressure": 1027,
             "humidity": 59,
-            "dew_point": 280.82,
-            "uvi": 3.16,
-            "clouds": 99,
+            "dew_point": 45.55,
+            "uvi": 2.63,
+            "clouds": 97,
             "visibility": 10000,
-            "wind_speed": 3.5,
-            "wind_deg": 35,
-            "wind_gust": 3.91,
+            "wind_speed": 7.34,
+            "wind_deg": 45,
+            "wind_gust": 7.94,
             "weather": [
                 {
                     "id": 804,
@@ -2568,31 +2568,31 @@ RSpec.describe RoadTrip do
     "daily": [
         {
             "dt": 1664294400,
-            "sunrise": 1664275011,
-            "sunset": 1664318012,
+            "sunrise": 1664275010,
+            "sunset": 1664318011,
             "moonrise": 1664281140,
             "moonset": 1664321520,
             "moon_phase": 0.06,
             "temp": {
-                "day": 294.78,
-                "min": 287.68,
-                "max": 295.66,
-                "night": 288.65,
-                "eve": 293.17,
-                "morn": 288.21
+                "day": 70.07,
+                "min": 58.24,
+                "max": 72.95,
+                "night": 60.48,
+                "eve": 70.59,
+                "morn": 59.2
             },
             "feels_like": {
-                "day": 294.23,
-                "night": 287.98,
-                "eve": 292.43,
-                "morn": 287.65
+                "day": 69.03,
+                "night": 59.23,
+                "eve": 69.37,
+                "morn": 58.21
             },
-            "pressure": 1008,
-            "humidity": 47,
-            "dew_point": 282.99,
-            "wind_speed": 5.33,
-            "wind_deg": 230,
-            "wind_gust": 9.42,
+            "pressure": 1009,
+            "humidity": 48,
+            "dew_point": 49.5,
+            "wind_speed": 12.3,
+            "wind_deg": 229,
+            "wind_gust": 21.05,
             "weather": [
                 {
                     "id": 804,
@@ -2603,35 +2603,35 @@ RSpec.describe RoadTrip do
             ],
             "clouds": 95,
             "pop": 0.02,
-            "uvi": 3.68
+            "uvi": 4.05
         },
         {
             "dt": 1664380800,
-            "sunrise": 1664361475,
-            "sunset": 1664404306,
+            "sunrise": 1664361474,
+            "sunset": 1664404305,
             "moonrise": 1664371860,
             "moonset": 1664409480,
             "moon_phase": 0.09,
             "temp": {
-                "day": 292.94,
-                "min": 284.5,
-                "max": 294.5,
-                "night": 288.18,
-                "eve": 292.14,
-                "morn": 284.65
+                "day": 68.31,
+                "min": 53.02,
+                "max": 70.72,
+                "night": 58.96,
+                "eve": 65.62,
+                "morn": 53.02
             },
             "feels_like": {
-                "day": 292.18,
-                "night": 287.54,
-                "eve": 291.43,
-                "morn": 284.02
+                "day": 66.9,
+                "night": 57.85,
+                "eve": 64.42,
+                "morn": 51.84
             },
-            "pressure": 1017,
-            "humidity": 46,
-            "dew_point": 280.76,
-            "wind_speed": 4.37,
-            "wind_deg": 274,
-            "wind_gust": 9.08,
+            "pressure": 1016,
+            "humidity": 44,
+            "dew_point": 45.66,
+            "wind_speed": 9.28,
+            "wind_deg": 275,
+            "wind_gust": 20.8,
             "weather": [
                 {
                     "id": 800,
@@ -2640,37 +2640,37 @@ RSpec.describe RoadTrip do
                     "icon": "01d"
                 }
             ],
-            "clouds": 0,
+            "clouds": 2,
             "pop": 0,
-            "uvi": 4.25
+            "uvi": 4.54
         },
         {
             "dt": 1664467200,
-            "sunrise": 1664447939,
-            "sunset": 1664490600,
+            "sunrise": 1664447938,
+            "sunset": 1664490599,
             "moonrise": 1664462640,
             "moonset": 1664497680,
             "moon_phase": 0.13,
             "temp": {
-                "day": 288.22,
-                "min": 284.82,
-                "max": 289.71,
-                "night": 284.82,
-                "eve": 287.61,
-                "morn": 285.89
+                "day": 58.15,
+                "min": 54.5,
+                "max": 61.29,
+                "night": 55.15,
+                "eve": 57.09,
+                "morn": 54.86
             },
             "feels_like": {
-                "day": 287.43,
-                "night": 284,
-                "eve": 286.78,
-                "morn": 285.26
+                "day": 56.68,
+                "night": 53.8,
+                "eve": 55.65,
+                "morn": 53.67
             },
             "pressure": 1027,
-            "humidity": 63,
-            "dew_point": 281.16,
-            "wind_speed": 3.95,
-            "wind_deg": 22,
-            "wind_gust": 8.11,
+            "humidity": 64,
+            "dew_point": 45.97,
+            "wind_speed": 9.28,
+            "wind_deg": 19,
+            "wind_gust": 18.66,
             "weather": [
                 {
                     "id": 804,
@@ -2680,36 +2680,36 @@ RSpec.describe RoadTrip do
                 }
             ],
             "clouds": 98,
-            "pop": 0.03,
-            "uvi": 3.16
+            "pop": 0,
+            "uvi": 3.01
         },
         {
             "dt": 1664553600,
-            "sunrise": 1664534404,
-            "sunset": 1664576895,
+            "sunrise": 1664534403,
+            "sunset": 1664576894,
             "moonrise": 1664553600,
             "moonset": 1664586420,
             "moon_phase": 0.17,
             "temp": {
-                "day": 288.38,
-                "min": 282.8,
-                "max": 290.22,
-                "night": 284.43,
-                "eve": 289.65,
-                "morn": 282.8
+                "day": 59.56,
+                "min": 48.83,
+                "max": 62.87,
+                "night": 53.64,
+                "eve": 60.37,
+                "morn": 49.24
             },
             "feels_like": {
-                "day": 287.34,
-                "night": 283.7,
-                "eve": 288.64,
-                "morn": 281.91
+                "day": 57.85,
+                "night": 52.5,
+                "eve": 58.78,
+                "morn": 47.53
             },
-            "pressure": 1028,
-            "humidity": 53,
-            "dew_point": 278.72,
-            "wind_speed": 2.76,
-            "wind_deg": 161,
-            "wind_gust": 6.17,
+            "pressure": 1029,
+            "humidity": 56,
+            "dew_point": 43.39,
+            "wind_speed": 6.67,
+            "wind_deg": 165,
+            "wind_gust": 15.9,
             "weather": [
                 {
                     "id": 802,
@@ -2718,37 +2718,37 @@ RSpec.describe RoadTrip do
                     "icon": "03d"
                 }
             ],
-            "clouds": 38,
+            "clouds": 37,
             "pop": 0,
-            "uvi": 4.76
+            "uvi": 4.75
         },
         {
             "dt": 1664640000,
-            "sunrise": 1664620869,
-            "sunset": 1664663189,
+            "sunrise": 1664620868,
+            "sunset": 1664663188,
             "moonrise": 1664644440,
             "moonset": 1664675700,
             "moon_phase": 0.2,
             "temp": {
-                "day": 288.94,
-                "min": 283.13,
-                "max": 291.8,
-                "night": 287.19,
-                "eve": 290.52,
-                "morn": 283.13
+                "day": 62.06,
+                "min": 51.8,
+                "max": 67.01,
+                "night": 59.11,
+                "eve": 66.25,
+                "morn": 51.8
             },
             "feels_like": {
-                "day": 287.8,
-                "night": 286.24,
-                "eve": 289.64,
-                "morn": 282.51
+                "day": 60.31,
+                "night": 57.81,
+                "eve": 64.74,
+                "morn": 50.16
             },
             "pressure": 1024,
-            "humidity": 47,
-            "dew_point": 277.62,
-            "wind_speed": 2.03,
-            "wind_deg": 253,
-            "wind_gust": 3.7,
+            "humidity": 50,
+            "dew_point": 42.93,
+            "wind_speed": 5.12,
+            "wind_deg": 235,
+            "wind_gust": 10.25,
             "weather": [
                 {
                     "id": 804,
@@ -2759,35 +2759,35 @@ RSpec.describe RoadTrip do
             ],
             "clouds": 100,
             "pop": 0,
-            "uvi": 0.21
+            "uvi": 3.45
         },
         {
             "dt": 1664726400,
-            "sunrise": 1664707334,
-            "sunset": 1664749484,
+            "sunrise": 1664707333,
+            "sunset": 1664749483,
             "moonrise": 1664734860,
             "moonset": 1664765700,
             "moon_phase": 0.25,
             "temp": {
-                "day": 286.8,
-                "min": 283.59,
-                "max": 287.02,
-                "night": 283.66,
-                "eve": 284.67,
-                "morn": 285.89
+                "day": 58.23,
+                "min": 52.2,
+                "max": 58.32,
+                "night": 52.66,
+                "eve": 52.65,
+                "morn": 56.59
             },
             "feels_like": {
-                "day": 286,
-                "night": 282.15,
-                "eve": 283.18,
-                "morn": 285.13
+                "day": 57.18,
+                "night": 50.16,
+                "eve": 50.14,
+                "morn": 55.04
             },
-            "pressure": 1029,
-            "humidity": 68,
-            "dew_point": 280.8,
-            "wind_speed": 6.4,
-            "wind_deg": 53,
-            "wind_gust": 9.53,
+            "pressure": 1027,
+            "humidity": 73,
+            "dew_point": 49.33,
+            "wind_speed": 15.66,
+            "wind_deg": 59,
+            "wind_gust": 24.79,
             "weather": [
                 {
                     "id": 804,
@@ -2798,35 +2798,35 @@ RSpec.describe RoadTrip do
             ],
             "clouds": 100,
             "pop": 0,
-            "uvi": 1
+            "uvi": 0.17
         },
         {
             "dt": 1664812800,
             "sunrise": 1664793799,
-            "sunset": 1664835780,
+            "sunset": 1664835779,
             "moonrise": 1664824680,
             "moonset": 0,
             "moon_phase": 0.27,
             "temp": {
-                "day": 286.17,
-                "min": 283.71,
-                "max": 286.22,
-                "night": 285.21,
-                "eve": 285.84,
-                "morn": 283.78
+                "day": 55.71,
+                "min": 52.75,
+                "max": 56.25,
+                "night": 53.53,
+                "eve": 54.27,
+                "morn": 52.97
             },
             "feels_like": {
-                "day": 284.91,
-                "night": 284.46,
-                "eve": 284.86,
-                "morn": 282.44
+                "day": 53.85,
+                "night": 51.73,
+                "eve": 52.5,
+                "morn": 50.74
             },
             "pressure": 1028,
-            "humidity": 53,
-            "dew_point": 276.77,
-            "wind_speed": 5.51,
-            "wind_deg": 73,
-            "wind_gust": 8.88,
+            "humidity": 61,
+            "dew_point": 42.19,
+            "wind_speed": 15.66,
+            "wind_deg": 64,
+            "wind_gust": 25.08,
             "weather": [
                 {
                     "id": 804,
@@ -2836,47 +2836,46 @@ RSpec.describe RoadTrip do
                 }
             ],
             "clouds": 100,
-            "pop": 0.11,
+            "pop": 0.04,
             "uvi": 1
         },
         {
             "dt": 1664899200,
-            "sunrise": 1664880265,
-            "sunset": 1664922076,
+            "sunrise": 1664880264,
+            "sunset": 1664922075,
             "moonrise": 1664913840,
             "moonset": 1664856300,
             "moon_phase": 0.31,
             "temp": {
-                "day": 287.42,
-                "min": 284.6,
-                "max": 289.67,
-                "night": 284.6,
-                "eve": 288.28,
-                "morn": 284.7
+                "day": 55.63,
+                "min": 53.58,
+                "max": 57.2,
+                "night": 54.28,
+                "eve": 55.4,
+                "morn": 53.58
             },
             "feels_like": {
-                "day": 286.89,
-                "night": 284.26,
-                "eve": 287.83,
-                "morn": 284.29
+                "day": 54,
+                "night": 53.17,
+                "eve": 53.92,
+                "morn": 51.89
             },
-            "pressure": 1013,
-            "humidity": 76,
-            "dew_point": 283.12,
-            "wind_speed": 3.63,
-            "wind_deg": 20,
-            "wind_gust": 6.69,
+            "pressure": 1021,
+            "humidity": 66,
+            "dew_point": 44.17,
+            "wind_speed": 10.85,
+            "wind_deg": 63,
+            "wind_gust": 16.22,
             "weather": [
                 {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10d"
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04d"
                 }
             ],
             "clouds": 100,
-            "pop": 0.57,
-            "rain": 1.78,
+            "pop": 0,
             "uvi": 1
         }
     ],
@@ -2894,14 +2893,18 @@ RSpec.describe RoadTrip do
     start_city = "Arlington,VA"
     end_city = "Boston,MA"
     road_trip_poro = RoadTrip.new(mapquest_data, weather_data, start_city, end_city)
- 
+
     expect(road_trip_poro).to be_a(RoadTrip)
     expect(road_trip_poro.start_city).to eq("Arlington,VA")
     expect(road_trip_poro.end_city).to eq("Boston,MA")
-    expect(road_trip_poro.travel_time).to eq("8 hours, 7 minutes")
+    expect(road_trip_poro.travel_time).to eq("07 hours, 49 minutes")
+    expect(road_trip_poro.travel_time_in_hours).to be_a Integer
+    expect(road_trip_poro.travel_time_in_hours).to eq(7)
+    expect(road_trip_poro.weather_data).to be_a Hash
     expect(road_trip_poro.weather_at_eta).to be_a Hash
-    expect(road_trip_poro.weather_at_eta).to include(:temperature, :conditions)
-    expect(road_trip_poro.weather_at_eta[:temperature]).to be_a Float
-    expect(road_trip_poro.weather_at_eta[:conditions]).to be_a String
+    expect(road_trip_poro.temperature_at_eta).to be_a Float
+    expect(road_trip_poro.temperature_at_eta).to eq(61.36)
+    expect(road_trip_poro.conditions_at_eta).to be_a String
+    expect(road_trip_poro.conditions_at_eta).to eq("scattered clouds")
   end 
 end
