@@ -27,6 +27,7 @@ RSpec.describe CurrentForecast do
         }
         
     current_forecast_poro = CurrentForecast.new(data)
+
     expect(current_forecast_poro).to be_a(CurrentForecast)
     expect(current_forecast_poro.date_time).to eq("2022-09-26 18:21:22 -0600")
     expect(current_forecast_poro.sunrise).to eq("2022-09-26 04:59:19 -0600")

@@ -18,7 +18,6 @@ class Forecast
   end
 
   def current(current_weather_data)
-    binding.pry
     CurrentForecast.new(current_weather_data)
   end
 
