@@ -22,4 +22,18 @@ RSpec.describe MapquestService do
     expect(single_result[:locations][0][:latLng][:lat]).to be_a Float 
     expect(single_result[:locations][0][:latLng][:lng]).to be_a Float 
   end
+
+  it 'retrieves directions from point a to point b', :vcr do 
+    start_city = "Denver,CO"
+    end_city = "Boston,MA"
+
+    parsed_json = MapquestService.get_directions(start_city, end_city)
+
+    expect(parsed_json).to be_a Hash
+
+    result = parsed_json[:route]
+
+    expect(result).to include(:realTime)
+    expect(result[:realTime]).to be_a Integer
+  end
 end
