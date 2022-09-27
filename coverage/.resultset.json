@@ -6,11 +6,9 @@
           1,
           null,
           1,
-          0,
+          1,
           null,
-          0,
-          null,
-          null,
+          1,
           null,
           null,
           null,
@@ -31,13 +29,15 @@
           null,
           null,
           null,
-          0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -340,8 +340,25 @@
           null,
           null
         ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/sweater_weather/sweater-weather/app/poros/single_hour_forecast.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1664296431
+    "timestamp": 1664296637
   }
 }

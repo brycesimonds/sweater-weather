@@ -27,9 +27,9 @@ RSpec.describe SingleHourForecast do
   }
         
     single_hour_forecast_poro = SingleHourForecast.new(data)
-  
+ 
     expect(single_hour_forecast_poro).to be_a(SingleHourForecast)
-    expect(single_hour_forecast_poro.time).to eq("2022-09-26 18:21:22 -0600")
+    expect(single_hour_forecast_poro.time).to eq("18:00:00")
     expect(single_hour_forecast_poro.temperature).to eq(292.2)
     expect(single_hour_forecast_poro.conditions).to eq("overcast clouds")
     expect(single_hour_forecast_poro.icon).to eq("04n")
