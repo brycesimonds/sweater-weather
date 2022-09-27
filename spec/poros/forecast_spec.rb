@@ -1704,8 +1704,8 @@ RSpec.describe Forecast do
 
     expect(forecast_poro.id).to eq(nil)
     expect(forecast_poro.type).to eq("forecast")
-    expect(forecast_poro.current_weather).to be_a(CurrentForecast)
-    expect(forecast_poro.hourly_weather.first).to be_a(HourForecast)
-    expect(forecast_poro.daily_weather.first).to be_a(DayForecast)
+    expect(forecast_poro.current_weather).to be_a CurrentForecast
+    expect(forecast_poro.hourly_weather).to be_all SingleHourForecast
+    expect(forecast_poro.daily_weather).to be_all SingleDayForecast
   end
 end
