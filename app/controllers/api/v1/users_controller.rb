@@ -1,8 +1,8 @@
 require 'securerandom'
 class Api::V1::UsersController < ApplicationController
   def create
-    if params[:user][:password] == params[:password_confirmation]
-      user = User.new(email: params[:user][:email], password: params[:user][:password], api_key: SecureRandom.hex)
+    if params[:password] == params[:password_confirmation]
+      user = User.new(email: params[:user][:email], password: params[:password], api_key: SecureRandom.hex)
       if user.save
         render json: UserSerializer.create_user(user), status: 201
       else
