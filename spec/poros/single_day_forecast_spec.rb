@@ -43,13 +43,13 @@ RSpec.describe SingleDayForecast do
   }
         
     single_day_forecast_poro = SingleDayForecast.new(data)
-    binding.pry
+    
     expect(single_day_forecast_poro).to be_a(SingleDayForecast)
-    expect(single_day_forecast_poro.date).to eq("")
-    expect(single_day_forecast_poro.sunrise).to eq("")
-    expect(single_day_forecast_poro.sunset).to eq("")
-    expect(single_day_forecast_poro.max_temp).to eq(299.08)
-    expect(single_day_forecast_poro.min_temp).to eq(287.64)
+    expect(single_day_forecast_poro.date).to eq("2022-09-26")
+    expect(single_day_forecast_poro.sunrise).to eq("2022-09-26 04:59:19 -0600")
+    expect(single_day_forecast_poro.sunset).to eq("2022-09-26 16:59:26 -0600")
+    expect(single_day_forecast_poro.max_temperature).to eq(299.08)
+    expect(single_day_forecast_poro.min_temperature).to eq(287.64)
     expect(single_day_forecast_poro.conditions).to eq("clear sky")
     expect(single_day_forecast_poro.icon).to eq("01d")
   end 

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-27T10:37:17-06:00">2022-09-27T10:37:17-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-27T10:45:50-06:00">2022-09-27T10:45:50-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  97.56%
+  97.73%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>82</b> relevant lines,
-    <span class="green"><b>80</b> lines covered</span> and
+    <b>88</b> relevant lines,
+    <span class="green"><b>86</b> lines covered</span> and
     <span class="red"><b>2</b> lines missed. </span>
     (<span class="green">
-  97.56%
+  97.73%
 </span>
 )
   </div>
@@ -71,11 +71,11 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#3dff8a595f9de5b62697e8f2a13768ee786ec826" class="src_link" title="app/poros/single_hour_forecast.rb">app/poros/single_hour_forecast.rb</a></td>
+            <td class="strong t-file__name"><a href="#988ee816636fe6905fa61f8645f17fcf62ad0a1a" class="src_link" title="app/poros/single_day_forecast.rb">app/poros/single_day_forecast.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -214,11 +214,11 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#ab1f3cacacef413d820fe336e0ba823ab70eafa8" class="src_link" title="spec/poros/single_hour_forecast.rb">spec/poros/single_hour_forecast.rb</a></td>
+            <td class="strong t-file__name"><a href="#f49032ba26e32ca1916e5305e8b2e8ff2bd15b62" class="src_link" title="spec/poros/single_day_forecast_spec.rb">spec/poros/single_day_forecast_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">37</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">56</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">13</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -252,9 +252,9 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="3dff8a595f9de5b62697e8f2a13768ee786ec826">
+        <div class="source_table" id="988ee816636fe6905fa61f8645f17fcf62ad0a1a">
   <div class="header">
-    <h3>app/poros/single_hour_forecast.rb</h3>
+    <h3>app/poros/single_day_forecast.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -266,8 +266,8 @@
     
 
     <div class="t-line-summary">
-      <b>7</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -285,7 +285,7 @@
 
             
 
-            <code class="ruby">class SingleHourForecast</code>
+            <code class="ruby">class SingleDayForecast</code>
           </li>
         </div>
       
@@ -296,7 +296,7 @@
 
             
 
-            <code class="ruby">  attr_reader :time,</code>
+            <code class="ruby">  attr_reader :date,</code>
           </li>
         </div>
       
@@ -307,7 +307,7 @@
 
             
 
-            <code class="ruby">              :temperature,</code>
+            <code class="ruby">              :sunrise,</code>
           </li>
         </div>
       
@@ -318,7 +318,7 @@
 
             
 
-            <code class="ruby">              :conditions,</code>
+            <code class="ruby">              :sunset,</code>
           </li>
         </div>
       
@@ -329,7 +329,7 @@
 
             
 
-            <code class="ruby">              :icon</code>
+            <code class="ruby">              :max_temperature,</code>
           </li>
         </div>
       
@@ -340,40 +340,40 @@
 
             
 
+            <code class="ruby">              :min_temperature,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">              :conditions,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">              :icon</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def initialize(data)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @time = Time.at(data[:dt]).to_s.split(&quot; &quot;)[1]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @temperature = data[:temp].to_f</code>
           </li>
         </div>
       
@@ -384,7 +384,7 @@
 
             
 
-            <code class="ruby">    @conditions = data[:weather].first[:description]</code>
+            <code class="ruby">  def initialize(data)</code>
           </li>
         </div>
       
@@ -395,12 +395,78 @@
 
             
 
+            <code class="ruby">    @date = Time.at(data[:dt]).to_s.split(&quot; &quot;).first</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @sunrise = Time.at(data[:sunrise])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @sunset = Time.at(data[:sunset])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @max_temperature = data[:temp][:max]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @min_temperature = data[:temp][:min]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @conditions = data[:weather].first[:description]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    @icon = data[:weather].first[:icon]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -411,7 +477,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -2646,9 +2712,9 @@
 </div>
 
       
-        <div class="source_table" id="ab1f3cacacef413d820fe336e0ba823ab70eafa8">
+        <div class="source_table" id="f49032ba26e32ca1916e5305e8b2e8ff2bd15b62">
   <div class="header">
-    <h3>spec/poros/single_hour_forecast.rb</h3>
+    <h3>spec/poros/single_day_forecast_spec.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -2660,8 +2726,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>13</b> relevant lines.
+      <span class="green"><b>13</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2701,7 +2767,7 @@
 
             
 
-            <code class="ruby">RSpec.describe SingleHourForecast do </code>
+            <code class="ruby">RSpec.describe SingleDayForecast do </code>
           </li>
         </div>
       
@@ -2734,7 +2800,7 @@
 
             
 
-            <code class="ruby">      &quot;dt&quot;: 1664236800,</code>
+            <code class="ruby">      &quot;dt&quot;: 1664208000,</code>
           </li>
         </div>
       
@@ -2745,7 +2811,7 @@
 
             
 
-            <code class="ruby">      &quot;temp&quot;: 292.2,</code>
+            <code class="ruby">      &quot;sunrise&quot;: 1664189959,</code>
           </li>
         </div>
       
@@ -2756,7 +2822,7 @@
 
             
 
-            <code class="ruby">      &quot;feels_like&quot;: 291.65,</code>
+            <code class="ruby">      &quot;sunset&quot;: 1664233166,</code>
           </li>
         </div>
       
@@ -2767,7 +2833,7 @@
 
             
 
-            <code class="ruby">      &quot;pressure&quot;: 1009,</code>
+            <code class="ruby">      &quot;moonrise&quot;: 1664192100,</code>
           </li>
         </div>
       
@@ -2778,7 +2844,7 @@
 
             
 
-            <code class="ruby">      &quot;humidity&quot;: 57,</code>
+            <code class="ruby">      &quot;moonset&quot;: 1664235360,</code>
           </li>
         </div>
       
@@ -2789,7 +2855,7 @@
 
             
 
-            <code class="ruby">      &quot;dew_point&quot;: 283.5,</code>
+            <code class="ruby">      &quot;moon_phase&quot;: 0.02,</code>
           </li>
         </div>
       
@@ -2800,7 +2866,7 @@
 
             
 
-            <code class="ruby">      &quot;uvi&quot;: 0,</code>
+            <code class="ruby">      &quot;temp&quot;: {</code>
           </li>
         </div>
       
@@ -2811,7 +2877,7 @@
 
             
 
-            <code class="ruby">      &quot;clouds&quot;: 100,</code>
+            <code class="ruby">          &quot;day&quot;: 297.39,</code>
           </li>
         </div>
       
@@ -2822,7 +2888,7 @@
 
             
 
-            <code class="ruby">      &quot;visibility&quot;: 10000,</code>
+            <code class="ruby">          &quot;min&quot;: 287.64,</code>
           </li>
         </div>
       
@@ -2833,7 +2899,7 @@
 
             
 
-            <code class="ruby">      &quot;wind_speed&quot;: 3.43,</code>
+            <code class="ruby">          &quot;max&quot;: 299.08,</code>
           </li>
         </div>
       
@@ -2844,7 +2910,7 @@
 
             
 
-            <code class="ruby">      &quot;wind_deg&quot;: 300,</code>
+            <code class="ruby">          &quot;night&quot;: 292,</code>
           </li>
         </div>
       
@@ -2855,7 +2921,7 @@
 
             
 
-            <code class="ruby">      &quot;wind_gust&quot;: 9.36,</code>
+            <code class="ruby">          &quot;eve&quot;: 293.56,</code>
           </li>
         </div>
       
@@ -2866,7 +2932,7 @@
 
             
 
-            <code class="ruby">      &quot;weather&quot;: [</code>
+            <code class="ruby">          &quot;morn&quot;: 287.95</code>
           </li>
         </div>
       
@@ -2877,7 +2943,7 @@
 
             
 
-            <code class="ruby">          {</code>
+            <code class="ruby">      },</code>
           </li>
         </div>
       
@@ -2888,7 +2954,7 @@
 
             
 
-            <code class="ruby">              &quot;id&quot;: 804,</code>
+            <code class="ruby">      &quot;feels_like&quot;: {</code>
           </li>
         </div>
       
@@ -2899,7 +2965,7 @@
 
             
 
-            <code class="ruby">              &quot;main&quot;: &quot;Clouds&quot;,</code>
+            <code class="ruby">          &quot;day&quot;: 296.73,</code>
           </li>
         </div>
       
@@ -2910,7 +2976,7 @@
 
             
 
-            <code class="ruby">              &quot;description&quot;: &quot;overcast clouds&quot;,</code>
+            <code class="ruby">          &quot;night&quot;: 291.14,</code>
           </li>
         </div>
       
@@ -2921,7 +2987,7 @@
 
             
 
-            <code class="ruby">              &quot;icon&quot;: &quot;04n&quot;</code>
+            <code class="ruby">          &quot;eve&quot;: 292.94,</code>
           </li>
         </div>
       
@@ -2932,7 +2998,7 @@
 
             
 
-            <code class="ruby">          }</code>
+            <code class="ruby">          &quot;morn&quot;: 287.68</code>
           </li>
         </div>
       
@@ -2943,7 +3009,7 @@
 
             
 
-            <code class="ruby">      ],</code>
+            <code class="ruby">      },</code>
           </li>
         </div>
       
@@ -2954,7 +3020,7 @@
 
             
 
-            <code class="ruby">      &quot;pop&quot;: 0</code>
+            <code class="ruby">      &quot;pressure&quot;: 1008,</code>
           </li>
         </div>
       
@@ -2965,7 +3031,7 @@
 
             
 
-            <code class="ruby">  }</code>
+            <code class="ruby">      &quot;humidity&quot;: 33,</code>
           </li>
         </div>
       
@@ -2976,18 +3042,18 @@
 
             
 
-            <code class="ruby">        </code>
+            <code class="ruby">      &quot;dew_point&quot;: 280.1,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="29">
+            
             
 
             
 
-            <code class="ruby">    single_hour_forecast_poro = SingleHourForecast.new(data)</code>
+            <code class="ruby">      &quot;wind_speed&quot;: 5.37,</code>
           </li>
         </div>
       
@@ -2998,62 +3064,62 @@
 
             
 
-            <code class="ruby"> </code>
+            <code class="ruby">      &quot;wind_deg&quot;: 273,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="31">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="31">
+            
             
 
             
 
-            <code class="ruby">    expect(single_hour_forecast_poro).to be_a(SingleHourForecast)</code>
+            <code class="ruby">      &quot;wind_gust&quot;: 10.07,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="32">
+            
             
 
             
 
-            <code class="ruby">    expect(single_hour_forecast_poro.time).to eq(&quot;18:00:00&quot;)</code>
+            <code class="ruby">      &quot;weather&quot;: [</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="33">
+            
             
 
             
 
-            <code class="ruby">    expect(single_hour_forecast_poro.temperature).to eq(292.2)</code>
+            <code class="ruby">          {</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="34">
+            
             
 
             
 
-            <code class="ruby">    expect(single_hour_forecast_poro.conditions).to eq(&quot;overcast clouds&quot;)</code>
+            <code class="ruby">              &quot;id&quot;: 800,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="35">
+            
             
 
             
 
-            <code class="ruby">    expect(single_hour_forecast_poro.icon).to eq(&quot;04n&quot;)</code>
+            <code class="ruby">              &quot;main&quot;: &quot;Clear&quot;,</code>
           </li>
         </div>
       
@@ -3064,12 +3130,221 @@
 
             
 
-            <code class="ruby">  end </code>
+            <code class="ruby">              &quot;description&quot;: &quot;clear sky&quot;,</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">              &quot;icon&quot;: &quot;01d&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">          }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">      ],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">      &quot;clouds&quot;: 0,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">      &quot;pop&quot;: 0.51,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby">      &quot;uvi&quot;: 5.44</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">  }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby">        </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    single_day_forecast_poro = SingleDayForecast.new(data)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro).to be_a(SingleDayForecast)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro.date).to eq(&quot;2022-09-26&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro.sunrise).to eq(&quot;2022-09-26 04:59:19 -0600&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro.sunset).to eq(&quot;2022-09-26 16:59:26 -0600&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro.max_temperature).to eq(299.08)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro.min_temperature).to eq(287.64)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro.conditions).to eq(&quot;clear sky&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(single_day_forecast_poro.icon).to eq(&quot;01d&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">  end </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
