@@ -1,7 +1,20 @@
 class RoadTripSerializer
   class << self 
     def create_road_trip(start_city, end_city, road_trip_weather_and_directions_object)
-      if road_trip_weather_and_directions_object.travel_time_in_hours.class == Integer
+      if road_trip_weather_and_directions_object.travel_time == "No route found" 
+        {
+          "data": {
+            "id": nil,
+            "type": "roadtrip",
+            "attributes": {
+              "start_city": start_city,
+              "end_city": end_city,
+              "travel_time": "Impossible",
+              "weather_at_eta": { }
+            }
+          }
+        }
+      else 
         {
           "data": {
             "id": nil,
@@ -14,19 +27,6 @@ class RoadTripSerializer
                 "temperature": road_trip_weather_and_directions_object.temperature_at_eta,
                 "conditions": road_trip_weather_and_directions_object.conditions_at_eta
               }
-            }
-          }
-        }
-      else 
-        {
-          "data": {
-            "id": nil,
-            "type": "roadtrip",
-            "attributes": {
-              "start_city": start_city,
-              "end_city": end_city,
-              "travel_time": "Impossible",
-              "weather_at_eta": { }
             }
           }
         }

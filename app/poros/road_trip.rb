@@ -30,10 +30,15 @@ class RoadTrip
   end
 
   def formatted_time(mapquest_data)
-    hours_minutes_seconds = mapquest_data[:route][:formattedTime].split(":")
-    hours = hours_minutes_seconds.first
-    minutes = hours_minutes_seconds[1]
-    return "#{hours} hours, #{minutes} minutes"
+    if mapquest_data[:route][:routeError][:errorCode] == 2 
+      return "No route found"
+    else 
+      hours_minutes_seconds = mapquest_data[:route][:formattedTime].split(":")
+      hours = hours_minutes_seconds.first
+      minutes = hours_minutes_seconds[1]
+      return "#{hours} hours, #{minutes} minutes"
+    end 
+
   end
 
   def temperature_at_eta
