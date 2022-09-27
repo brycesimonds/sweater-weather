@@ -1,6 +1,6 @@
 class Forecast
   attr_reader :id,
-              :type
+              :type,
               :current_weather,
               :eight_hour_weather,
               :five_day_weather,
@@ -18,6 +18,7 @@ class Forecast
   end
 
   def current(current_weather_data)
+    binding.pry
     CurrentForecast.new(current_weather_data)
   end
 
@@ -26,11 +27,11 @@ class Forecast
   end
 
   def first_five_days(daily_data)
-    daily_data.first(5).map do {|day| SingleDayForecast.new(day)}
+    daily_data.first(5).map {|day| SingleDayForecast.new(day)}
   end
 
   def all_daily_data(daily_data)
-    daily_data.first(5).map do {|day| SingleDayForecast.new(day)}
+    daily_data.first(5).map {|day| SingleDayForecast.new(day)}
   end
 
   def all_hourly_data(hours_data)
