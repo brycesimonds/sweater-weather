@@ -6,7 +6,15 @@ class RoadTripSerializer
           "data": {
             "id": nil,
             "type": "roadtrip",
-            "attributes": road_trip_weather_and_directions_object
+            "attributes": {
+              "start_city": start_city,
+              "end_city": end_city,
+              "travel_time": road_trip_weather_and_directions_object.travel_time,
+              "weather_at_eta": {
+                "temperature": road_trip_weather_and_directions_object.temperature_at_eta,
+                "conditions": road_trip_weather_and_directions_object.conditions_at_eta
+              }
+            }
           }
         }
       else 
