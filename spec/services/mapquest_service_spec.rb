@@ -31,7 +31,7 @@ RSpec.describe MapquestService do
     expect(parsed_json).to be_a Hash
 
     result = parsed_json[:route]
-    expect(result).to include(:realTime)
-    expect(result[:realTime]).to be_a Integer
+    expect(result).to include(:formattedTime)
+    expect(result[:formattedTime]).to be_a String
   end
 end
