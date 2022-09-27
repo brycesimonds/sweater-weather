@@ -28,11 +28,9 @@ RSpec.describe MapquestService do
     end_city = "Boston,MA"
 
     parsed_json = MapquestService.get_directions(start_city, end_city)
-
     expect(parsed_json).to be_a Hash
 
     result = parsed_json[:route]
-
     expect(result).to include(:realTime)
     expect(result[:realTime]).to be_a Integer
   end
