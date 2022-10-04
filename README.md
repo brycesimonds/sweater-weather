@@ -92,37 +92,94 @@ Accept: application/json
 ```
 
 ### Register a new user
+<b>Request:</b>
+```
 POST /api/v1/users
+Content-Type: application/json
+Accept: application/json
+JSON payload in body of the request:
+{
+  "email": "whatever@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+```
+<b>Response:</b>
+```
+status: 201
+body:
 
-![Screen Shot 2022-09-22 at 1 38 59 PM](https://user-images.githubusercontent.com/90064385/191814879-7caf7dd0-e2ab-4e43-bd1c-012e8fce0bb7.png)
+{
+  "data": {
+    "type": "users",
+    "id": "1",
+    "attributes": {
+      "email": "whatever@example.com",
+      "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
 
-### Get All comments for a blog
-get "/api/v1/blogs/:blog_id/comments"
+### Log in an existing user
+```
+POST /api/v1/sessions
+Content-Type: application/json
+Accept: application/json
+JSON payload in body of the request:
+{
+  "email": "whatever@example.com",
+  "password": "password"
+}
+```
+<b>Response:</b>
+```
+status: 200
+body:
 
-![Screen Shot 2022-09-22 at 1 41 58 PM](https://user-images.githubusercontent.com/90064385/191815428-64d7de1c-7d04-445b-8dd2-9d58886f0cb0.png)
+{
+  "data": {
+    "type": "users",
+    "id": "1",
+    "attributes": {
+      "email": "whatever@example.com",
+      "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
 
-## Update a blog 
-patch "/api/v1/blogs/:blog_id"
 
-![Screen Shot 2022-09-22 at 1 53 06 PM](https://user-images.githubusercontent.com/90064385/191817492-bc545f39-eade-4df0-8309-ee083a2a906a.png)
-
-## Delete a blog
-delete "/api/v1/blogs/:blog_id"
-
-![Screen Shot 2022-09-22 at 1 57 10 PM](https://user-images.githubusercontent.com/90064385/191818218-2b4b542d-8b18-4745-9a20-d2c655208d04.png)
-
-## Movie Recomendations by keyword
-get "/api/v1/movie_recommendations?keyword="
-
-![Screen Shot 2022-09-22 at 2 01 46 PM](https://user-images.githubusercontent.com/90064385/191819099-e44e801e-18e9-4b01-902b-96df33093b2d.png)
-
-## Book Recomendations by keyword
-get "/api/v1/book_recommendations?keyword="
-
-![Screen Shot 2022-09-22 at 2 03 44 PM](https://user-images.githubusercontent.com/90064385/191819429-c506edb3-591e-4cda-8ace-71ec39fcd789.png)
-
-## Create a blog
-post "/api/v1/blogs"
+## Retrieve data needed for planning a road trip
+```
+POST /api/v1/road_trip
+Content-Type: application/json
+Accept: application/json
+JSON payload in body of the request:
+{
+  "origin": "Denver,CO",
+  "destination": "Estes Park,CO",
+  "api_key": "jgn983hy48thw9begh98h4539h4"
+}
+```
+<b>Response:</b>
+```
+{
+  "data": {
+    "id": null,
+    "type": "roadtrip",
+    "attributes": {
+      "start_city": "Denver, CO",
+      "end_city": "Estes Park, CO",
+      "travel_time": "2 hours, 13 minutes"
+      "weather_at_eta": {
+        "temperature": 59.4,
+        "conditions": "partly cloudy with a chance of meatballs"
+      }
+    }
+  }
+}
+```
 
 ## Contributor
 -   **Bryce Simonds** - _Turing Student_ - [GitHub Profile](https://github.com/brycesimonds) - [LinkedIn](https://www.linkedin.com/in/bryce-simonds/) - [Turing Alum Profile](https://terminal.turing.edu/alumni/1499-bryce-simonds)
