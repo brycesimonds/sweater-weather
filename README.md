@@ -20,7 +20,6 @@ Let's go on a road trip! But wait, how long is it going to take to get there? Wh
 
 ## Table of contents
 
-- [Schema](#schema)
 - [Setup](#setup)
 - [Gems](#gems)
 - [Endpoints](#endpoints)
@@ -28,19 +27,20 @@ Let's go on a road trip! But wait, how long is it going to take to get there? Wh
 
 ## Schema: 
 
-![Screen Shot 2022-09-22 at 1 12 18 PM](https://user-images.githubusercontent.com/90064385/191810476-7ded9548-90ea-40f3-9bcd-3ccdb3979a92.png)
+![Screen Shot 2022-10-04 at 3 22 33 PM](https://user-images.githubusercontent.com/103782984/193932397-85375101-e49c-4f84-80ed-bdabf2d5f47c.png)
+
 
 ## Setup
 
 - `Ruby 2.7.4`
-- `Rails 5.2.8.1'`
-- [Fork this repository](https://github.com/pdthomson/DreamBook_BE)
-- Clone your fork
+- `Rails 5.2.8.1`
+- [Fork this repository](https://github.com/brycesimonds/sweater-weather)
+- Clone your fork to your local machine
 - From the command line, install gems and set up your DB:
 - `bundle install`
 - `rails db:create`
 - `rails db:migrate`
-- Install Figaro with `bundle exec figaro install` to create an `application.yml` file locally (this to be updated with any needed ENV variables!!!)
+- Install Figaro with `bundle exec figaro install` to create an `application.yml` file locally (this to be updated with any needed ENV variables for OpenWeather One Call API and MapQuest’s Geocoding API!!!)
 
 ## Gems
 
@@ -51,10 +51,38 @@ Let's go on a road trip! But wait, how long is it going to take to get there? Wh
 
 ## Endpoints
 
-### Get all blogs
-get '/api/v1/blogs'
+### Retrieve weather for a city
+GET /api/v1/forecast?location=denver,co
 
-![Screen Shot 2022-09-22 at 1 33 24 PM](https://user-images.githubusercontent.com/90064385/191813809-2575599a-d345-4f7d-94e1-b0d625cd856a.png)
+```{
+  "data": {
+    "id": null,
+    "type": "forecast",
+    "attributes": {
+      "current_weather": {
+        "datetime": "2020-09-30 13:27:03 -0600",
+        "temperature": 79.4,
+        etc
+      },
+      "daily_weather": [
+        {
+          "date": "2020-10-01",
+          "sunrise": "2020-10-01 06:10:43 -0600",
+          etc
+        },
+        {...} etc
+      ],
+      "hourly_weather": [
+        {
+          "time": "14:00:00",
+          "conditions": "cloudy with a chance of meatballs",
+          etc
+        },
+        {...} etc
+      ]
+    }
+  }
+} ```
 
 ### Get a blog
 get "/api/v1/blogs/:blog_id"
