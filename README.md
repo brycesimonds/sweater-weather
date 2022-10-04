@@ -23,7 +23,7 @@ Let's go on a road trip! But wait, how long is it going to take to get there? Wh
 - [Setup](#setup)
 - [Gems](#gems)
 - [Endpoints](#endpoints)
-- [Contributors](#contributors)
+- [Contributor](#contributor)
 
 ## Schema: 
 
