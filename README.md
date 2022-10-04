@@ -10,7 +10,8 @@
   <img src="https://user-images.githubusercontent.com/103782984/193868817-3056a083-d06c-4add-b4ab-d1d7494b659e.jpeg" width=30% height=30%>
 </p>
 
-# Sweater Weather: API Only - Built with Service Oriented Architecture considerations 
+# Sweater Weather: API Only 
+### Built with Service Oriented Architecture considerations 
 
 ## Overview
 
