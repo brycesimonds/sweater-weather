@@ -19,7 +19,7 @@ This repo represents the back-end portion of a project for Turing School of Soft
 Let's go on a road trip! But wait, how long is it going to take to get there? What should we bring? What will the weather be like? Have no fear, Sweater Weather is here! Communicating with a front-end, Sweater Wheater exposes 4 endpoints. One endpoint for current, hourly, and daily weather. A second for User Registration. Another for User Login. And the fourth for data specific for a road trip such as travel time and what the weather will be like upon arrival. This app utilizes two external APIs: OpenWeather One Call API for weather, and MapQuest’s Geocoding API for longtitude and latitude, and directions. 
 
 ## Table of contents
-
+- [Schema](#schema)
 - [Setup](#setup)
 - [Gems](#gems)
 - [Endpoints](#endpoints)
@@ -52,8 +52,13 @@ Let's go on a road trip! But wait, how long is it going to take to get there? Wh
 ## Endpoints
 
 ### Retrieve weather for a city
+<b>Request:</b>
+```
 GET /api/v1/forecast?location=denver,co
-
+Content-Type: application/json
+Accept: application/json
+```
+<b>Response:</b>
 ```
 {
   "data": {
@@ -86,8 +91,8 @@ GET /api/v1/forecast?location=denver,co
 } 
 ```
 
-### Get a blog
-get "/api/v1/blogs/:blog_id"
+### Register a new user
+POST /api/v1/users
 
 ![Screen Shot 2022-09-22 at 1 38 59 PM](https://user-images.githubusercontent.com/90064385/191814879-7caf7dd0-e2ab-4e43-bd1c-012e8fce0bb7.png)
 
