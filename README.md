@@ -54,7 +54,8 @@ Let's go on a road trip! But wait, how long is it going to take to get there? Wh
 ### Retrieve weather for a city
 GET /api/v1/forecast?location=denver,co
 
-```{
+```
+{
   "data": {
     "id": null,
     "type": "forecast",
@@ -82,7 +83,8 @@ GET /api/v1/forecast?location=denver,co
       ]
     }
   }
-} ```
+} 
+```
 
 ### Get a blog
 get "/api/v1/blogs/:blog_id"
