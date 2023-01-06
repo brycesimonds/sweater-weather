@@ -14,7 +14,7 @@
 
 ## Overview
 
-### This repo is no longer deployed via Heroku/Fly.io/etc. due to the public API "Open Weather - One Call" no longer being free. 
+### Please note: This repo is no functional due to the public API "Open Weather - One Call" no longer being free. Shown 'responses' below are based off of this application when the API was free. 
 
 This repo represents the back-end portion of a project for Turing School of Software and Design's Back-End Engineering program.  
 
