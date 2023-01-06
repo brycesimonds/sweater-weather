@@ -14,6 +14,8 @@
 
 ## Overview
 
+### This repo is no longer deployed via Heroku/Fly.io/etc. due to the public API "Open Weather - One Call" no longer being free. 
+
 This repo represents the back-end portion of a project for Turing School of Software and Design's Back-End Engineering program.  
 
 Let's go on a road trip! But wait, how long is it going to take to get there? What should we bring? What will the weather be like? Have no fear, Sweater Weather is here! Communicating with a front-end, Sweater Wheater exposes 4 endpoints. One endpoint for current, hourly, and daily weather. A second for User Registration. Another for User Login. And the fourth for data specific for a road trip such as travel time and what the weather will be like upon arrival. This app utilizes two external APIs: OpenWeather One Call API for weather, and MapQuest’s Geocoding API for longitude and latitude, and directions. 
